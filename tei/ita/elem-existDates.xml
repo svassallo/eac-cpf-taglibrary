@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="schema/tagLibrary_elementDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="existDates" type="elementDocumentation">
+    <head>
+        <gi>existDates</gi>
+    </head>
+    <div type="fullName">
+        <p xml:lang="ita">Date di esistenza</p>
+    </div>
+    <div type="summary">
+        <p xml:lang="ita">Date di esistenza dell'entità che si sta descrivendo, come ad esempio le date di fondazione o di scioglimento per un ente e le date di nascita, di morte o di attività per le persone.</p>
+    </div>
+    <div type="description">
+        <p xml:lang="ita">Le date di esistenza dell'entità che si sta descrivendo, come ad esempio le date di fondazione o di scioglimento per un ente e le date di nascita, di morte o di attività per le persone. <gi>existDates</gi> può contenere le date certe o approssimate espresse attraverso i suoi sotto-elementi <gi>date</gi>, <gi>dateRange</gi> o <gi>dateSet</gi>. È possibile includere un elemento <gi>descriptiveNote</gi> qualora sia necessaria una spiegazione maggiormente dettagliata delle date di esistenza.</p>
+        <p xml:lang="ita">Utilizzare l'elemento <gi>date</gi> per registrare la data di un evento singolo, come la data di nascita o la data di incorporazione. Utilizzare <gi>dateRange</gi> per codificare una coppia di date inclusive. Utilizzare <gi>dateSet</gi> per codificare espressioni di date più complesse che sommino elementi <gi>date</gi> e <gi>dateRange</gi>.</p>
+        <p xml:lang="ita">Non confondere questo elemento con <gi>useDates</gi>, che è un elemento figlio di <gi>nameEntry</gi> o di <gi>nameEntryParallel</gi> e rappresenta le date di utilizzo di una denominazione o di un gruppo di denominazioni.</p>
+    </div>
+    <div type="mayContain">
+        <p>date, dateRange, dateSet, descriptiveNote</p>
+    </div>
+    <div type="mayOccurWithin">
+        <p>description</p>
+    </div>
+    <div type="attributes">
+        <p xml:lang="eng">
+            <list type="gloss">
+                <label>localType</label>
+                <item>optional</item>
+                <label>xml:id</label>
+                <item>optional</item>
+                <label>xml:lang</label>
+                <item>optional</item>
+            </list>
+        </p>
+    </div>
+    <div type="reference">
+        <p>ISAAR (CPF) 5.2.1</p>
+    </div>
+    <div type="occurrence">
+        <div type="mandatory">
+            <p xml:lang="eng">Optional</p>
+        </div>
+        <div type="repeatable">
+            <p xml:lang="eng">Non-repeatable</p>
+        </div>
+    </div>
+    <div type="examples">
+        <egXML xml:lang="eng" xmlns="http://www.tei-c.org/ns/Examples">
+            <eac-cpf:existDates xmlns:eac-cpf="urn:isbn:1-931666-33-4">
+                <eac-cpf:dateRange>
+                    <eac-cpf:fromDate standardDate="1868">1868</eac-cpf:fromDate>
+                    <eac-cpf:toDate standardDate="1936">1936</eac-cpf:toDate>
+                </eac-cpf:dateRange>
+                <eac-cpf:descriptiveNote>
+                    <eac-cpf:p>The company was in business these years</eac-cpf:p>
+                </eac-cpf:descriptiveNote>
+            </eac-cpf:existDates>
+        </egXML>
+    </div>
+</div>

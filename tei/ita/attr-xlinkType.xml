@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../TEI/schema/tagLibrary_elementDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="xlinkType" type="attributeDocumentation">
+   <head>
+      <att>xlink:type</att>
+   </head>
+   <div type="fullName">
+      <p xml:lang="ita">Xlink: type</p>
+   </div>
+   <div type="summary">
+      <p xml:lang="ita">Valore fisso che identifica un elemento XLINK conforme a un particolare tipo.</p>
+   </div>
+   <div type="description">
+      <p xml:lang="ita">Un valore fisso che identifica un elemento XLINK conforme a un particolare tipo. All'interno di EAC-CPF è usato un solo tipo di elementi XLINK: “simple” (semplice). Sebbene l'attributo sia opzionale nei documenti validati secondo la versione W3C Schema di EAC-CPF, è obbligatorio per la versione Relax NG di EAC-CPF. Per supportare lo scambio di documenti EAC-CPF, è raccomandato che l'attributo <att>xlink:type</att> sia presente nel documento qualora venga utilizzato uno qualsiasi degli altri attributi XLINK.</p>
+   </div>
+   <div type="datatype" xml:lang="eng">
+      <p>Fixed value: "simple"</p>
+   </div>
+</div>

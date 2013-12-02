@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../TEI/schema/tagLibrary_elementDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="altitude" type="attributeDocumentation">
+   <head>
+      <att>altitude</att>
+   </head>
+   <div type="fullName">
+      <p xml:lang="ita">Altitudine</p>
+   </div>
+   <div type="summary">
+<p xml:lang="ita">Altitudine o elevazione di un luogo geografico.</p>
+   </div>
+   <div type="description">
+      <p xml:lang="ita">L'attributo <att>altitude</att> ricorre in <gi>place</gi>. Il valore dell'attributo è l'altitudine o l'elevazione del luogo nominato. <att>altitude</att> dovrebbe essere utilizzato in congiunzione con <att>longitude</att> e <att>latitude</att>.</p>
+   </div>
+
+   <div type="datatype" xml:lang="eng">
+      <p>NMTOKEN</p>
+   </div>
+
+</div>

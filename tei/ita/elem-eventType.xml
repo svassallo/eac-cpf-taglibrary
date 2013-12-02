@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="schema/tagLibrary_elementDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="eventType" type="elementDocumentation">
+    <head>
+        <gi>eventType</gi>
+    </head>
+    <div type="fullName">
+        <p xml:lang="ita">Tipologia di un intervento di manutenzione</p>
+    </div>
+    <div type="summary">
+        <p xml:lang="ita">Tipologia di intervento di manutenzione sul documento EAC-CPF.</p>
+    </div>
+    <div type="description">
+        <p xml:lang="ita">Un elemento obbligatorio all'interno di <gi>maintenanceEvent</gi> che identifica la tipologia di intervento. I valori possibili sono: "created" (creato), "revised" (rivisto), "updated" (aggiornato), "deleted" (eliminato), "derived" (derivato) o "cancelled" (cancellato). Una descrizione discorsiva dell'intervento maggiormente estesa può essere fornita all'interno dell'elemento opzionale <gi>eventDescription</gi>.
+</p>
+        <p xml:lang="ita">Alla prima stesura, il tipo di intervento dovrebbe essere “created”. Un tipo di intervento “derived” è previsto per indicare che il record è stato derivato da un altro sistema descrittivo. Se sono state operate revisioni a un documento EAC-CPF esistente, il tipo di evento dovrebbe essere “revised”. L'aggiornamento di un record, come tipo specifico di revisione, può essere indicato con il valore “updated”. Poiché è necessario essere trasparenti su ciò che è accaduto a un record, in modo particolare qualora i record siano condivisi o siano collegati tra di loro, le altre tipologie di intervento includono “deleted” per i record che sono stati cancellati dal sistema o “cancelled” per i record che sono marcati come non attivi (obsoleti o respinti), ma mantenuti per riferimento.</p>
+    </div>
+    <div type="mayContain">
+        <p xml:lang="eng">"cancelled" or "created" or "deleted" or "derived" or "revised" or "updated"</p>
+    </div>
+    <div type="mayOccurWithin">
+        <p>maintenanceEvent</p>
+    </div>
+    <div type="attributes">
+        <p xml:lang="eng">
+            <list type="gloss">
+                <label>xml:id</label>
+                <item>optional</item>
+            </list>
+        </p>
+
+    </div>
+    <div type="reference">
+        <p>ISAAR (CPF) 5.4.9</p>
+    </div>
+    <div type="occurrence">
+        <div type="mandatory">
+            <p xml:lang="eng">Mandatory</p>
+        </div>
+        <div type="repeatable">
+            <p xml:lang="eng">Non-repeatable</p>
+        </div>
+    </div>
+    <div type="examples">
+        <egXML xml:lang="eng" xmlns="http://www.tei-c.org/ns/Examples">
+            <eac-cpf:maintenanceEvent xmlns:eac-cpf="urn:isbn:1-931666-33-4">
+                <eac-cpf:eventType>created</eac-cpf:eventType>
+                <eac-cpf:eventDateTime standardDateTime="2009-11-30T12:00:00+01:00"/>
+                <eac-cpf:agentType>human</eac-cpf:agentType>
+                <eac-cpf:agent>Bill Stockting</eac-cpf:agent>
+                <eac-cpf:eventDescription>Created from original in ISAAR (CPF), 2nd edition: example
+                    10</eac-cpf:eventDescription>
+            </eac-cpf:maintenanceEvent>
+        </egXML>
+    </div>
+</div>

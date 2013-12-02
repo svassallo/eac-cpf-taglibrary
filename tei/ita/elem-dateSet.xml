@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="schema/tagLibrary_elementDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="dateSet" type="elementDocumentation">
+    <head>
+        <gi>dateSet</gi>
+    </head>
+    <div type="fullName">
+        <p xml:lang="ita">Raggruppamento di date</p>
+    </div>
+    <div type="summary">
+        <p xml:lang="ita">Elemento di raggruppamento per facilitare l'espressione di date complesse, permettendo di combinare un gruppo che comprenda una data singola, un intervallo di date, molteplici date singole o molteplici intervalli di date.</p>
+    </div>
+    <div type="description">
+        <p xml:lang="ita">Un elemento di raggruppamento per combinare una date singole e un intervallo di date, molteplici date singole o molteplici intervalli di date. L'elemento <gi>dateSet</gi> è utilizzato in situazioni dove è necessario gestire informazioni complesse sulle date e richiede almeno due elementi figli. Questi possono essere una qualunque combinazione degli elementi <gi>date</gi> e <gi>dateRange</gi>.</p>
+    </div>
+    <div type="mayContain">
+        <p>date, dateRange</p>
+    </div>
+    <div type="mayOccurWithin">
+        <p>cpfRelation, existDates, function, functionRelation, legalStatus, localDescription, mandate, occupation, place, resourceRelation, useDates</p>
+    </div>
+    <div type="attributes">
+        <p xml:lang="ita">
+            <list type="gloss">
+                <label>localType</label>
+                <item>optional</item>
+                <label>xml:id</label>
+                <item>optional</item>
+                <label>xml:lang</label>
+                <item>optional</item>
+            </list>
+        </p>
+    </div>
+    <div type="occurrence">
+        <div type="mandatory">
+            <p xml:lang="ita">optional</p>
+        </div>
+        <div type="repeatable">
+            <p xml:lang="ita">wiederholbar</p>
+        </div>
+    </div>
+    <div type="examples">
+        <egXML xml:lang="eng" xmlns="http://www.tei-c.org/ns/Examples">
+            <eac-cpf:dateSet xmlns:eac-cpf="urn:isbn:1-931666-33-4">
+                <eac-cpf:dateRange>
+                    <eac-cpf:fromDate standardDate="1928-09">1928 settembre</eac-cpf:fromDate>
+                    <eac-cpf:toDate standardDate="1930-08">1930 autunno</eac-cpf:toDate>
+                </eac-cpf:dateRange>
+                <eac-cpf:dateRange>
+                    <eac-cpf:fromDate standardDate="1947">1947</eac-cpf:fromDate>
+                    <eac-cpf:toDate standardDate="1949">1949</eac-cpf:toDate>
+                </eac-cpf:dateRange>
+                <eac-cpf:date>1950</eac-cpf:date>
+                <eac-cpf:date standardDate="1951-10-27">27 of October 1951</eac-cpf:date>
+            </eac-cpf:dateSet>
+        </egXML>
+    </div>
+</div>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="schema/tagLibrary_elementDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="cpfDescription" type="elementDocumentation">
+    <head>
+        <gi>cpfDescription</gi>
+    </head>
+    <div type="fullName">
+        <p xml:lang="ita">Descrizione di ente, persona o famiglia</p>
+    </div>
+    <div type="summary">
+        <p xml:lang="ita"><gi>cpfDescription</gi> contiene la descrizione di un'identità. Di norma ogni entità ha una  sola identità, ma quando ne ha più d'una, devono essere utilizzati o l'elemento <gi>multipleIdentities</gi> o più record EAC-CPF tra loro interrelati.</p>
+    </div>
+    <div type="description">
+        <p xml:lang="ita"><gi>cpfDescription</gi> contiene la descrizione di un'identità. Ogni descrizione contiene la/e denominazione/i con cui l'identità è conosciuta e può eventualmente contenere la descrizione del contesto storico per facilitare la comprensione di tale identità. <gi>cpfDescription</gi> comprende obbligatoriamente un elemento <gi>identity</gi> che a sua volta contiene le forme autorizzate e parallele della denominazione, e gli elementi opzionali <gi>description</gi> e <gi>relations</gi> che forniscono le informazioni di contesto dell'entità descritta, quali le relazioni con altre entità, le fonti e le funzioni.</p>
+        <p xml:lang="ita">Un elemento opzionale <gi>alternativeSet</gi> permette di incorporare nello stesso documento due o più record di autorità derivati da due o più differenti sistemi. In caso di utilizzo dell'elemento <gi>multipleIdentities</gi>, l'attributo <att>xml:id</att> permette di di fornire un identificativo per ciascuna delle identità incluse  negli elementi <gi>cpfDescription</gi>. </p>
+    </div>
+    <div type="mayContain">
+        <p>alternativeSet, description, identity, relations</p>
+    </div>
+    <div type="mayOccurWithin">
+        <p>eac-cpf, multipleIdentities</p>
+    </div>
+    <div type="attributes">
+        <p xml:lang="eng">
+            <list type="gloss">
+                <label>xml:base</label>
+                <item>optional</item>
+                <label>xml:id</label>
+                <item>optional</item>
+                <label>xml:lang</label>
+                <item>optional</item>
+            </list>
+        </p>
+
+    </div>
+    <div type="reference">
+        <p>ISAAR (CPF) 5.1, 5.2, 5.3</p>
+    </div>
+    <div type="occurrence">
+        <div type="occurenceSpecifikation" n="1">
+            <head>Within eac-cpf:</head>
+            <div type="mandatory">
+                <p xml:lang="eng">Mandatory</p>
+            </div>
+            <div type="repeatable">
+                <p xml:lang="eng">Non-repeatable</p>
+            </div>
+        </div>
+        <div type="occurenceSpecifikation" n="2">
+            <head>Within multipleIdentities:</head>
+            <div type="mandatory">
+                <p xml:lang="eng">Mandatory</p>
+            </div>
+            <div type="repeatable">
+                <p xml:lang="eng">Repeatable</p>
+            </div>
+        </div>
+    </div>
+    <div type="examples">
+        <egXML xml:lang="eng" xmlns="http://www.tei-c.org/ns/Examples">
+            <eac-cpf:cpfDescription xmlns:eac-cpf="urn:isbn:1-931666-33-4">
+                <eac-cpf:identity>[...] </eac-cpf:identity>
+                <eac-cpf:description>[...] </eac-cpf:description>
+                <eac-cpf:relations>[...]</eac-cpf:relations>
+            </eac-cpf:cpfDescription>
+        </egXML>
+    </div>
+</div>

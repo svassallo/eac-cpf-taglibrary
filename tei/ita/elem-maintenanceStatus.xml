@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="schema/tagLibrary_elementDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="maintenanceStatus" type="elementDocumentation">
+   <head>
+      <gi>maintenanceStatus</gi>
+   </head>
+   <div type="fullName">
+      <p xml:lang="ita">Stato di manutenzione</p>
+   </div>
+   <div type="summary">
+      <p xml:lang="ita">Stato attuale di stesura del documento EAC-CPF.</p>
+   </div>
+   <div type="description">
+      <p xml:lang="ita"
+            >Un elemento obbligatorio all'interno di <gi>control</gi> che registra lo stato attuale di stesura del documento EAC-CPF: quando un documento EAC-CPF viene modificato o avvengono altri interventi (come registrati nell'elemento <gi>maintenanceHistory</gi>), lo stato di manutenzione dovrebbe essere aggiornato di conseguenza per riflettere il nuovo stato attuale di stesura.</p>
+      <p xml:lang="ita"
+            >Alla prima stesura lo stato sarà “new” (nuovo), che in una revisione potrà essere cambiato in “revised” (rivisto). Poiché è necessario essere trasparenti su ciò che è accaduto a un record, in modo particolare quando i record sono condivisi o sono collegati tra di loro, sono disponibili alcuni stati per i record che non sono attualmente più disponibili. Un record che è stato semplicemente eliminato dal sistema può avere lo stato “deleted” (eliminato), ma nei casi in cui i record sono marcati come non attivi (obsoleti o respinti), ma devono essere mantenuti per riferimento, si può indicare lo stato “cancelled” (annullato). Tuttavia se un record è stato eliminato perché è stato sostituito da due o più record allora bisognerebbe indicare lo stato “deletedSplit” (eliminato perché separato), mentre se è stato semplicemente rimpiazzato da un nuovo record allora è appropriato come valore dello stato “deletedReplaced” (eliminato perché sostituito). È previsto uno stato “derived” (derivato) per indicare che il record è stato derivato da un altro sistema descrittivo.</p>
+   </div>
+   <div type="mayContain">
+      <p>"cancelled" or "deleted" or "deletedReplaced" or "deletedSplit" or "derived" or "new" or "revised"</p>
+   </div>
+   <div type="mayOccurWithin">
+      <p>control</p>
+   </div>
+   <div type="attributes">
+      <p xml:lang="eng">
+         <list xmlns="http://www.tei-c.org/ns/1.0" type="gloss">
+            <label>xml:id</label>
+            <item>Optional</item>
+         </list>
+      </p>
+   </div>
+   <div type="reference">
+      <p>ISAAR (CPF) 5.4.4</p>
+   </div>
+   <div type="occurrence">
+      <div type="mandatory">
+         <p xml:lang="eng">Mandatory</p>
+      </div>
+      <div type="repeatable">
+         <p xml:lang="eng">Non-repeatable</p>
+      </div>
+   </div>
+   <div type="examples">
+      <_0:egXML xmlns:_0="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+         <eac-cpf:maintenanceStatus xmlns:eac-cpf="urn:isbn:1-931666-33-4"
+            >new</eac-cpf:maintenanceStatus>
+      </_0:egXML>
+   </div>
+</div>

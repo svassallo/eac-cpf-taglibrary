@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../TEI/schema/tagLibrary_elementDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="languageCode" type="attributeDocumentation">
+   <head>
+      <att>languageCode</att>
+   </head>
+   <div type="fullName">
+      <p xml:lang="ita">Codice linguistico</p>
+   </div>
+   <div type="summary">
+      <p xml:lang="ita">Codice della lingua ISO 639-2 a tre cifre. Deve ricorrere in <gi>language</gi>.</p>
+   </div>
+   <div type="description">
+      <p xml:lang="ita"
+            >L'attributo <att>languageCode</att> deve ricorrere in <gi>language</gi>. Il codice linguistico è utilizzato per indicare il codice standard ISO 639-2 Codes for the representation of Names of Languages (Codici per la rappresentazione dei nomi delle lingue) per rappresentare la lingua del documento EAC-CPF. L'elenco può essere scaricato dal <ref terget="http://www.loc.gov/standards/iso639-2/langhome.htm">sito web della Library of Congress</ref>, l'agenzia responsabile dello standard.</p>
+   </div>
+
+   <div type="datatype" xml:lang="eng">
+      <p>ISO 639-2 Codes for the Representation of Names of Languages</p>
+   </div>
+
+</div>

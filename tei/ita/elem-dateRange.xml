@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="schema/tagLibrary_elementDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="dateRange" type="elementDocumentation">
+    <head>
+        <gi>dateRange</gi>
+    </head>
+    <div type="fullName">
+        <p xml:lang="ita">Intervallo di date</p>
+    </div>
+    <div type="summary">
+        <p xml:lang="ita">Intervallo di date di un evento nella storia (o nelle relazioni), di una persona, famiglia o ente che si sta descrivendo nel documento EAC-CPF.</p>
+    </div>
+    <div type="description">
+        <p xml:lang="ita">Un elemento generico per esprimere le date inclusive di un evento nella storia (o nelle  relazioni), di una persona, famiglia o ente che si sta descrivendo nel documento EAC-CPF. <gi>dateRange</gi> contiene obbligatoriamente <gi>fromDate</gi> (estremo remoto) e <gi>toDate</gi> (estremo recente) come elementi figli. Se invece un evento o una relazione è caratterizzato da una data singola utilizzare l'elemento <gi>date</gi>, mentre datazioni maggiormente complesse (combinazioni di date singole e di intervalli di date) possono essere espresse in <gi>dateSet</gi>.</p>
+        <p xml:lang="ita">L'attributo <att>localType</att> può essere usato per fornire una caratterizzazione maggiormente specifica delle date.</p>
+        <p xml:lang="ita">Le date di esistenza dell'entità che si sta descrivendo nel documento EAC-CPF sono codificate all'interno dell'elemento <gi>existDates</gi>, mentre le date di uso di una determinata denominazione dell'entità sono codificate nell'elemento <gi>useDates</gi>. La data e l'ora di un intervento di manutenzione nella storia del documento EAC-CPF sono indicate nell'elemento <gi>eventDateTime</gi>.</p>
+    </div>
+    <div type="mayContain">
+        <p>fromDate, toDate</p>
+    </div>
+    <div type="mayOccurWithin">
+        <p>chronItem, cpfRelation, dateSet, existDates, function, functionRelation, legalStatus, localControl, localDescription, mandate, occupation, place, resourceRelation, useDates</p>
+    </div>
+    <div type="attributes">
+        <p xml:lang="eng">
+            <list type="gloss">
+                <label>localType</label>
+                <item>optional</item>
+                <label>xml:id</label>
+                <item>optional</item>
+                <label>xml:lang</label>
+                <item>optional</item>
+            </list>
+        </p>
+
+    </div>
+    <div type="occurrence">
+        <div type="mandatory">
+            <p xml:lang="eng">Optional</p>
+        </div>
+        <div type="repeatable">
+            <p xml:lang="eng">Repeatable</p>
+        </div>
+    </div>
+    <div type="examples">
+        <egXML xml:lang="eng" xmlns="http://www.tei-c.org/ns/Examples">
+            <eac-cpf:dateRange xmlns:eac-cpf="urn:isbn:1-931666-33-4">
+                <eac-cpf:fromDate standardDate="1765-09-18">September 18, 1765</eac-cpf:fromDate>
+                <eac-cpf:toDate standardDate="1846-06-01">June 1, 1846</eac-cpf:toDate>
+            </eac-cpf:dateRange>
+        </egXML>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../TEI/schema/tagLibrary_elementDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="resourceRelationType" type="attributeDocumentation">
+   <head>
+      <att>resourceRelationType</att>
+   </head>
+   <div type="fullName">
+      <p xml:lang="ita">Tipologia della relazione con la risorsa</p>
+   </div>
+   <div type="summary">
+<p xml:lang="ita">Tipologia della relazione dell'entità che si sta descrivendo con la risorsa.</p>
+   </div>
+   <div type="description">
+      <p xml:lang="ita">L'attributo <att>resourceRelationType</att> ricorre in <gi>resourceRelation</gi>. Il valore determina il tipo di relazione che l'entità descritta nel documento EAC-CPF ha con la risorsa. Se la natura della relazione è maggiormente specifica rispetto ai valori elencati di seguito, è possibile usare gli attributi Xlink in aggiunta a <att>resourceRelationType</att>.</p>
+   </div>
+   <div type="datatype" xml:lang="eng">
+      <p>"creatorOf" or "subjectOf" or "other"</p>
+   </div>
+</div>

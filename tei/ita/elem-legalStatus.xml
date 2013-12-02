@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="schema/tagLibrary_elementDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="legalStatus" type="elementDocumentation">
+   <head>
+      <gi>legalStatus</gi>
+   </head>
+   <div type="fullName">
+      <p xml:lang="ita">Condizione giuridica</p>
+   </div>
+   <div type="summary">
+      <p xml:lang="ita">Elemento usato per codificare informazioni sulla condizione giuridica dell'ente.</p>
+   </div>
+   <div type="description">
+      <p xml:lang="ita"
+            >L'elemento <gi>legalStatus</gi> è un contenitore usato per codificare un termine di indice, attraverso l'elemento figlio <gi>term</gi>. La condizione giuridica di un ente è generalmente definita e garantita da un'autorità o attraverso un'agenzia autorizzata. Inserire i termini in accordo con le disposizioni della legislazione che controlla. I termini possono essere attinti da un vocabolario controllato o possono essere termini in linguaggio naturale. Le date o gli intervalli di date associati (<gi>date</gi>, <gi>dateRange</gi> o <gi>dateSet</gi>) e i luoghi (<gi>placeEntry</gi>) possono essere inclusi per circostanziare ulteriormente il significato dei termini. Un elemento <gi>descriptiveNote</gi> può essere incluso qualora sia necessaria una spiegazione testuale maggiormente estesa.</p>
+      <p xml:lang="ita">Un singolo elemento <gi>legalStatus</gi> può essere codificato direttamente all'interno di <gi>description</gi> In alternativa, molteplici elementi <gi>legalStatus</gi> possono essere raggruppati all'interno del contenitore <gi>legalStatuses</gi> per semplificare la loro gestione come insieme.</p>
+      <p xml:lang="ita"
+            >La condizione giuridica può essere in alternativa descritta discorsivamente in <gi>biogHist</gi> (ISAAR (CPF) 5.2.2 Storia biografica). L'elemento <gi>legalStatus</gi> dovrebbe essere usato ogni volta che è necessario un trattamento semantico separato delle informazioni sulla condizione giuridica.</p>
+   </div>
+   <div type="mayContain">
+      <p>citation, date, dateRange, dateSet, descriptiveNote, placeEntry, term</p>
+   </div>
+   <div type="mayOccurWithin">
+      <p>description, legalStatuses</p>
+   </div>
+   <div type="attributes">
+      <p xml:lang="eng">
+         <list xmlns="http://www.tei-c.org/ns/1.0" type="gloss">
+            <label>localType</label>
+            <item>Optional</item>
+            <label>xml:id</label>
+            <item>Optional</item>
+            <label>xml:lang</label>
+            <item>Optional</item>
+         </list>
+      </p>
+   </div>
+   <div type="reference">
+      <p>ISAAR (CPF) 5.2.4</p>
+   </div>
+   <div type="occurrence">
+      <div type="mandatory">
+         <p xml:lang="eng">Optional</p>
+      </div>
+      <div type="repeatable">
+         <p xml:lang="eng">Repeatable</p>
+      </div>
+   </div>
+   <div type="examples">
+      <_0:egXML xmlns:_0="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+         <eac-cpf:legalStatus xmlns:eac-cpf="urn:isbn:1-931666-33-4">
+            <eac-cpf:term>Department of State</eac-cpf:term>
+         </eac-cpf:legalStatus>
+         <eac-cpf:legalStatus xmlns:eac-cpf="urn:isbn:1-931666-33-4">
+            <eac-cpf:term>Organismo de la Administracion Central del Estado</eac-cpf:term>
+            <eac-cpf:date standardDate="1769">1769</eac-cpf:date>
+         </eac-cpf:legalStatus>
+      </_0:egXML>
+   </div>
+</div>

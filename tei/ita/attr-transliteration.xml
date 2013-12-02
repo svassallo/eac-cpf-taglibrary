@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../TEI/schema/tagLibrary_elementDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="transliteration" type="attributeDocumentation">
+   <head>
+      <att>transliteration</att>
+   </head>
+   <div type="fullName">
+      <p xml:lang="ita">Traslitterazione</p>
+   </div>
+   <div type="summary">
+<p xml:lang="ita">Valore per indicare lo schema di traslitterazione usato per rappresentare la conversione di una scrittura in un'altra.</p>
+   </div>
+   <div type="description">
+      <p xml:lang="ita">Le convenzioni e le regole che prescrivono un metodo per convertire una scrittura in un'altra.</p>
+   </div>
+   <div type="datatype" xml:lang="eng">
+      <p>NMTOKEN</p>
+   </div>
+</div>

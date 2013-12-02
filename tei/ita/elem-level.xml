@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="schema/tagLibrary_elementDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="level" type="elementDocumentation">
+   <head>
+      <gi>level</gi>
+   </head>
+   <div type="fullName">
+      <p xml:lang="ita">Livello</p>
+   </div>
+   <div type="summary">
+      <p xml:lang="ita"
+         >Elemento obbligatorio all'interno di <gi>outline</gi> per delineare il formato del sommario.</p>
+   </div>
+   <div type="description">
+      <p xml:lang="ita"
+            >All'interno di <gi>outline</gi>, sono usati molteplici elementi <gi>level</gi> per indicare i livelli gerarchici delle informazioni che compongono il sommario. Quando è presente più di un livello gerarchico, sono presenti <gi>level</gi> consecutivi: gli elementi <gi>level</gi> consecutivi sono nidificati ricorsivamente per identificare i differenti livelli di contenuto.</p>
+            <p xml:lang="ita">Ogni <gi>level</gi>, a sua volta, contiene uno o più elementi <gi>item</gi> che includono il contenuto informativo del sommario.
+</p>
+   </div>
+   <div type="mayContain">
+      <p>item, level</p>
+   </div>
+   <div type="mayOccurWithin">
+      <p>level, outline</p>
+   </div>
+   <div type="attributes">
+      <p xml:lang="eng">
+         <list xmlns="http://www.tei-c.org/ns/1.0" type="gloss">
+            <label>localType</label>
+            <item>Optional</item>
+            <label>xml:id</label>
+            <item>Optional</item>
+            <label>xml:lang</label>
+            <item>Optional</item>
+         </list>
+      </p>
+   </div>
+   <div type="occurrence">
+      <div type="mandatory">
+         <p xml:lang="eng">Mandatory</p>
+      </div>
+      <div type="repeatable">
+         <p xml:lang="eng">Repeatable</p>
+      </div>
+   </div>
+   <div type="examples">
+      <_0:egXML xmlns:_0="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+         <eac-cpf:outline xmlns:eac-cpf="urn:isbn:1-931666-33-4">
+            <eac-cpf:level>
+               <eac-cpf:item>I.</eac-cpf:item>
+            </eac-cpf:level>
+            <eac-cpf:level>
+               <eac-cpf:item>II.</eac-cpf:item>
+               <eac-cpf:level>
+                  <eac-cpf:item>A.</eac-cpf:item>
+               </eac-cpf:level>
+               <eac-cpf:level>
+                  <eac-cpf:item>B.</eac-cpf:item>
+                  <eac-cpf:level>
+                     <eac-cpf:item>1.</eac-cpf:item>
+                  </eac-cpf:level>
+                  <eac-cpf:level>
+                     <eac-cpf:item>2.</eac-cpf:item>
+                  </eac-cpf:level>
+               </eac-cpf:level>
+            </eac-cpf:level>
+         </eac-cpf:outline>
+      </_0:egXML>
+   </div>
+</div>

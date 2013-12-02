@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="schema/tagLibrary_elementDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="agencyCode" type="elementDocumentation">
+    <head>
+        <gi>agencyCode</gi>
+    </head>
+    <div type="fullName">
+        <p xml:lang="ita">Codice identificativo dell'istituzione responsabile</p>
+    </div>
+    <div type="summary">
+        <p xml:lang="ita"
+            >Codice che identifica l'istituzione o il servizio responsabile dell'elaborazione, l'aggiornamento e/o la diffusione del record EAC-CPF.</p>
+    </div>
+    <div type="description">
+        <p xml:lang="ita"
+                >Elemento di <gi>maintenanceAgency</gi> nella sezione <gi>control</gi> utilizzato per fornire un codice che identifichi l'istituzione o il servizio responsabile dell'elaborazione, dell'aggiornamento e /o della diffusione del record EAC-CPF. La denominazione dell'istituzione responsabile è indicata in <gi>agencyName</gi>. Il codice identificativo è utilizzato insieme al valore dell'elemento obbligatorio <gi>recordId</gi> per fornire un codice identificativo univoco del record a livello internazionale.</p>
+        <p xml:lang="ita"
+                >Il formato del codice identificativo è vincolato dalle regole previste dall'International Standard Identifier for Libraries and Related Organizations (ISIL: ISO 15511): un prefisso, un trattino e un identificativo. Il codice è alfanumerico (possibili solo A-Z, 0-9, barra, trattino-meno e due punti) con un massimo di 16 caratteri. Se conforme alle convezioni locali o nazionali fornire il codice ISIL valido per l'istituzione, fornito da un'autorità nazionale (generalmente la biblioteca nazionale) o da un servizio (come OCLC). Se non si ricade in questa casistica, può essere generato un codice locale nell'elemento <gi>otherAgencyCode</gi>, utilizzando come prefisso il codice della nazione previsto da ISO 3166-1 alpha-2, al fine di garantirne l'univocità a livello internazionale.</p>
+    </div>
+    <div type="mayContain">
+        <p>[text]</p>
+    </div>
+    <div type="mayOccurWithin">
+        <p>maintenanceAgency</p>
+    </div>
+    <div type="attributes">
+        <p xml:lang="eng">
+            <list type="gloss">
+                <label>xml:id</label>
+                <item>optional</item>
+            </list>
+        </p>
+    </div>
+    <div type="reference">
+        <p>ISAAR (CPF) 5.4.2</p>
+    </div>
+
+    <div type="occurrence">
+        <div type="mandatory">
+            <p xml:lang="eng">Optional</p>
+        </div>
+        <div type="repeatable">
+            <p xml:lang="eng">Non-repeatable</p>
+        </div>
+    </div>
+    <div type="examples">
+        <egXML xml:lang="eng" xmlns="http://www.tei-c.org/ns/Examples">
+            <eac-cpf:maintenanceAgency xmlns:eac-cpf="urn:isbn:1-931666-33-4">
+                <eac-cpf:agencyCode>AU-ANL:PEAU</eac-cpf:agencyCode>
+                <eac-cpf:agencyName>National Library of Australia</eac-cpf:agencyName>
+            </eac-cpf:maintenanceAgency>
+        </egXML>
+    </div>
+</div>

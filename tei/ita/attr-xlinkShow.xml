@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../TEI/schema/tagLibrary_elementDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="xlinkShow" type="attributeDocumentation">
+   <head>
+      <att>xlink:show</att>
+   </head>
+   <div type="fullName">
+      <p xml:lang="ita">Xlink: show</p>
+   </div>
+   <div type="summary">
+      <p xml:lang="ita">Utilizzato per segnalare il comportamento atteso per ciò che concerne dove deve essere visualizzata la risorsa remota quando il collegamento viene risolto.</p>
+   </div>
+   <div type="description" xml:lang="eng">
+      <p xml:lang="ita">L'attributo <att>xlink:show</att> dovrebbe essere usato con <att>xlink:actuate</att> per indicare il comportamento atteso. L'attributo <att>xlink:show</att> è utilizzato per segnalare il comportamento atteso per quanto riguarda dove deve essere visualizzata la risorsa remota quando il collegamento viene risolto. I valori indicano se la risorsa deve essere visualizzata incorporata nel punto del collegamento (“embed”), se deve sostituire la risorsa in cui appare (“replace”) o se deve essere caricata in una nuova finestra (“new”). "None" (nessuno) o "other" (altro) sono gli altri valori accettati.</p>
+   </div>
+   <div type="datatype" xml:lang="eng">
+      <p>"embed" or "new" or "replace" or "none" or "other"</p>
+   </div>
+</div>

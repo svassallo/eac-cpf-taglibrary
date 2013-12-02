@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="schema/tagLibrary_elementDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="function" type="elementDocumentation">
+   <head>
+      <gi>function</gi>
+   </head>
+   <div type="fullName">
+      <p xml:lang="ita">Funzione</p>
+   </div>
+   <div type="summary">
+      <p xml:lang="ita"
+         >Elemento che fornisce informazioni su una funzione, un'attività, un ruolo o uno scopo svolti o dichiarati dall'entità che si sta descrivendo.</p>
+   </div>
+   <div type="description">
+      <p xml:lang="ita"
+            >L'elemento <gi>function</gi> è un elemento contenitore usato per codificare un termine di indice, attraverso l'elemento figlio <gi>term</gi>. I termini sono usati per identificare le funzioni, i processi, le attività, le operazioni o le transazioni eseguite dall'entità EAC-CPF. Possono essere attinti da un vocabolario controllato o possono essere termini in linguaggio naturale. Le date o gli intervalli di date associati (<gi>date</gi>, <gi>dateRange</gi> o <gi>dateSet</gi>) e i luoghi (<gi>placeEntry</gi>) possono essere inclusi per circostanziare ulteriormente il significato dei termini. Un elemento <gi>descriptiveNote</gi> può essere incluso qualora sia necessaria una spiegazione testuale maggiormente estesa.</p>
+      <p xml:lang="ita"
+            >Un singolo elemento <gi>function</gi> può essere codificato direttamente all'interno di <gi>description</gi> In alternativa, molteplici elementi <gi>function</gi> possono essere raggruppati all'interno del contenitore <gi>functions</gi> per semplificare la loro gestione come insieme.</p>
+      <p xml:lang="ita"
+            >Le funzioni possono essere in alternativa descritte discorsivamente in <gi>biogHist</gi> (ISAAR (CPF) 5.2.2 Storia biografica). L'elemento <gi>function</gi> dovrebbe essere usato ogni volta che è necessario un trattamento semantico separato delle informazioni sulle funzioni.</p>
+      <p xml:lang="ita"
+            >Come ulteriore possibilità, le descrizioni di funzioni possono essere componenti separati nei sistemi descrittivi archivistici. Queste descrizioni dovrebbero essere compilate secondo lo standard internazionale per la descrizione delle funzioni (ISDF - International Standard for Describing Functions) e generalmente saranno descritte con un altro linguaggio di marcatura. In simili sistemi è possibile utilizzare <gi>functionRelation</gi> per collegare l'entità EAC-CPF alla descrizione della funzione correlata. In questi sistemi, l'elemento <gi>function</gi> risulterà probabilmente ridondante.</p>
+   </div>
+   <div type="mayContain">
+      <p>citation, date, dateRange, dateSet, descriptiveNote, placeEntry, term</p>
+   </div>
+   <div type="mayOccurWithin">
+      <p>description, functions</p>
+   </div>
+   <div type="attributes">
+      <p xml:lang="eng">
+         <list type="gloss">
+            <label>localType</label>
+            <item>optional</item>
+            <label>xml:id</label>
+            <item>optional</item>
+            <label>xml:lang</label>
+            <item>optional</item>
+         </list>
+      </p>
+   </div>
+   <div type="reference">
+      <p>ISAAR (CPF) 5.2.5</p>
+   </div>
+   <div type="occurrence">
+      <div type="mandatory">
+         <p xml:lang="eng">Optional</p>
+      </div>
+      <div type="repeatable">
+         <p xml:lang="eng">Repeatable</p>
+      </div>
+   </div>
+   <div type="examples">
+      <egXML xml:lang="eng" xmlns="http://www.tei-c.org/ns/Examples">
+         <eac-cpf:function xmlns:eac-cpf="urn:isbn:1-931666-33-4">
+            <eac-cpf:term>Estate ownership</eac-cpf:term>
+            <eac-cpf:descriptiveNote>Social, political, and cultural role typical of landed aristocracy
+										in England. The first Viscount Campden amassed a large fortune in trade in London and
+										purchased extensive estates, including Exton (Rutland), and Chipping Campden
+										(Gloucestershire). The Barham Court (Kent) estate was the acquisition of the first Baron
+										Barham, a successful admiral and naval administrator (First Lord of the Admiralty
+										1805).</eac-cpf:descriptiveNote>
+         </eac-cpf:function>
+      </egXML>
+   </div>
+</div>

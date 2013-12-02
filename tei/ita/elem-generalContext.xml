@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="schema/tagLibrary_elementDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="generalContext" type="elementDocumentation">
+   <head>
+      <gi>generalContext</gi>
+   </head>
+   <div type="fullName">
+      <p xml:lang="ita">Contesto generale</p>
+   </div>
+   <div type="summary">
+      <p xml:lang="ita"
+         >Elemento che codifica informazioni sul contesto generale sociale e culturale dell'entità che si sta descrivendo.</p>
+   </div>
+   <div type="description">
+      <p xml:lang="ita"
+            >L'elemento <gi>generalContext</gi> può contenere gli elementi <gi>list</gi>, <gi>outline</gi> o <gi>p</gi> per formattare testualmente le informazioni sull'ambiente sociale, culturale, economico, politico e storico in cui è esistita l'entità che si sta descrivendo. Il contesto generale fornisce un ampio spazio per registrare le informazioni non gestite specificatamente dagli altri elementi di <gi>description</gi>.</p>
+      <p xml:lang="ita"
+            >Gli elementi opzionali <gi>citation</gi>, <gi>list</gi> e <gi>outline</gi> sono usati per gestire una maggiore complessità nell'esprimere o rappresentare il contesto generale che si sta descrivendo. Una semplice espressione discorsiva del contesto generale può essere codificata in uno o più elementi <gi>p</gi>.</p>
+   </div>
+
+   <div type="mayContain">
+      <p>citation, list, outline, p</p>
+   </div>
+   <div type="mayOccurWithin">
+      <p>description</p>
+   </div>
+   <div type="attributes">
+      <p xml:lang="eng">
+         <list type="gloss">
+            <label>localType</label>
+            <item>optional</item>
+            <label>xml:id</label>
+            <item>optional</item>
+            <label>xml:lang</label>
+            <item>optional</item>
+         </list>
+      </p>
+
+   </div>
+   <div type="reference">
+      <p>ISAAR (CPF) 5.2.8</p>
+   </div>
+   <div type="occurrence">
+      <div type="mandatory">
+         <p xml:lang="eng">Optional</p>
+      </div>
+      <div type="repeatable">
+         <p xml:lang="eng">Repeatable</p>
+      </div>
+   </div>
+   <div type="examples">
+      <_0:egXML xmlns:_0="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+         <eac-cpf:generalContext xmlns:eac-cpf="urn:isbn:1-931666-33-4">
+            <eac-cpf:p>Edward Koiko Mabo was born in 1936 on the island of Mer, one of the Murray
+										Islands, which are located at the eastern extremity of Torres Strait. In June 1992, six
+										months after his death, Mabo achieved national prominence as the successful principal
+										plaintiff in the landmark High Court ruling on native land title. The High Court ruling,
+										for the first time, gave legal recognition to the fact that indigenous land ownership
+										existed in Australia before European settlement and that, in some cases, this land tenure
+										was not subsequently extinguished by the Crown.</eac-cpf:p>
+         </eac-cpf:generalContext>
+      </_0:egXML>
+   </div>
+</div>

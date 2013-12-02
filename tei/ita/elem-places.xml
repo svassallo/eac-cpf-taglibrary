@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="schema/tagLibrary_elementDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="places" type="elementDocumentation">
+   <head>
+      <gi>places</gi>
+   </head>
+   <div type="fullName">
+      <p xml:lang="ita">Luoghi</p>
+   </div>
+   <div type="summary">
+      <p xml:lang="ita">Elemento di raggruppamento usato per raccogliere insieme singoli elementi <gi>place</gi>.</p>
+   </div>
+   <div type="description">
+      <p xml:lang="ita"
+            >Utilizzare l'elemento opzionale <gi>places</gi> per raggruppare insieme una o più occorrenze di <gi>place</gi> in modo che esse possano essere gestite come un pacchetto. Un singolo <gi>place</gi> può rimanere da solo o può essere comunque racchiuso all'interno di <gi>places</gi>.</p>
+      <p xml:lang="ita">Gli elementi opzionali <gi>citation</gi>, <gi>list</gi> e <gi>outline</gi> sono usati per gestire una maggiore complessità nell'esprimere o rappresentare i luoghi che si stanno descrivendo. Una semplice espressione discorsiva dei luoghi può essere codificata in uno o più elementi <gi>p</gi>.</p>
+   </div>
+   <div type="mayContain">
+      <p>citation, descriptiveNote, list, outline, p, place</p>
+   </div>
+   <div type="mayOccurWithin">
+      <p>description</p>
+   </div>
+   <div type="attributes">
+      <p xml:lang="eng">
+         <list xmlns="http://www.tei-c.org/ns/1.0" type="gloss">
+            <label>localType</label>
+            <item>Optional</item>
+            <label>xml:id</label>
+            <item>Optional</item>
+            <label>xml:lang</label>
+            <item>Optional</item>
+         </list>
+      </p>
+   </div>
+   <div type="reference">
+      <p>ISAAR (CPF) 5.2.3</p>
+   </div>
+   <div type="occurrence">
+      <div type="mandatory">
+         <p xml:lang="eng">Optional</p>
+      </div>
+      <div type="repeatable">
+         <p xml:lang="eng">Repeatable</p>
+      </div>
+   </div>
+   <div type="examples">
+      <_0:egXML xmlns:_0="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+         <eac-cpf:places xmlns:eac-cpf="urn:isbn:1-931666-33-4">
+            <eac-cpf:place>
+               <eac-cpf:placeRole>Residence</eac-cpf:placeRole>
+               <eac-cpf:placeEntry>Paris, France</eac-cpf:placeEntry>
+            </eac-cpf:place>
+            <eac-cpf:place>
+               <eac-cpf:placeRole>Residence</eac-cpf:placeRole>
+               <eac-cpf:placeEntry>New York, N.Y.</eac-cpf:placeEntry>
+            </eac-cpf:place>
+            <eac-cpf:place>
+               <eac-cpf:placeRole>Residence</eac-cpf:placeRole>
+               <eac-cpf:placeEntry>Riode Janeiro, Brazil</eac-cpf:placeEntry>
+            </eac-cpf:place>
+            <eac-cpf:place>
+               <eac-cpf:placeRole>Recidence</eac-cpf:placeRole>
+               <eac-cpf:placeEntry countryCode="SWE">Eskilstuna</eac-cpf:placeEntry>
+            </eac-cpf:place>
+         </eac-cpf:places>
+         <eac-cpf:places xmlns:eac-cpf="urn:isbn:1-931666-33-4">
+            <eac-cpf:place>
+               <eac-cpf:placeRole>naissance</eac-cpf:placeRole>
+               <eac-cpf:placeEntry>Nijni-Novgorod (Russie)</eac-cpf:placeEntry>
+            </eac-cpf:place>
+            <eac-cpf:place>
+               <eac-cpf:placeRole>déces</eac-cpf:placeRole>
+               <eac-cpf:placeEntry>Gorki (Russie)</eac-cpf:placeEntry>
+            </eac-cpf:place>
+            <eac-cpf:place>
+               <eac-cpf:placeRole>nationalité</eac-cpf:placeRole>
+               <eac-cpf:placeEntry countryCode="SU">Union Soviétique</eac-cpf:placeEntry>
+            </eac-cpf:place>
+         </eac-cpf:places>
+      </_0:egXML>
+   </div>
+</div>

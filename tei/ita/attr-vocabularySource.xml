@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../TEI/schema/tagLibrary_elementDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="vocabularySource" type="attributeDocumentation">
+   <head>
+      <att>vocabularySource</att>
+   </head>
+   <div type="fullName">
+      <p xml:lang="ita">Fonte del vocabolario</p>
+   </div>
+   <div type="summary">
+<p xml:lang="ita">Valore per indicare la fonte del vocabolario da cui sono derivati i termini usati.</p>
+   </div>
+   <div type="description">
+      <p xml:lang="ita"
+            >Il vocabolario controllato usato per derivare i termini indicati all'interno degli elementi <gi>term</gi>, <gi>placeEntry</gi> e <gi>placeRole</gi>. I vocabolari controllati dovrebbero essere dichiarati nell'elemento <gi>conventionDeclaration</gi> all'interno dell'elemento <gi>control</gi>.</p>
+   </div>
+   <div type="datatype" xml:lang="eng">
+      <p>anyURI</p>
+   </div>
+</div>

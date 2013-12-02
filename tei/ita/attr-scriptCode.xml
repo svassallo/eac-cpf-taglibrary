@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../TEI/schema/tagLibrary_elementDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="scriptCode" type="attributeDocumentation">
+   <head>
+      <att>scriptCode</att>
+   </head>
+   <div type="fullName">
+      <p xml:lang="ita">Codice della scrittura</p>
+   </div>
+   <div type="summary">
+<p xml:lang="ita">Codice ISO 15924 a quattro lettere per la scrittura usata.</p>
+   </div>
+   <div type="description">
+      <p xml:lang="ita">Un codice standard di quattro lettere per la scrittura usata con una determinata lingua. L'attributo <att>scriptCode</att> è obbligatorio all'interno dell'elemento <gi>script</gi> ed è presente anche negli altri elementi dove può essere indicato un lingua.</p>
+   </div>
+   <div type="datatype" xml:lang="eng">
+      <p>ISO 15924 Code for the Representation of Names and Scripts</p>
+   </div>
+</div>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="schema/tagLibrary_elementDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="otherAgencyCode" type="elementDocumentation">
+   <head>
+      <gi>otherAgencyCode</gi>
+   </head>
+   <div type="fullName">
+      <p xml:lang="ita">Altro codice identificativo dell'agenzia</p>
+   </div>
+   <div type="summary">
+      <p xml:lang="ita"
+         >Codice identificativo aggiuntivo per rappresentare l'istituzione o il servizio responsabile per l'elaborazione, l'aggiornamento e la disseminazione del record EAC-CPF.</p>
+   </div>
+   <div type="description">
+      <p xml:lang="ita"
+            >Un elemento di <gi>maintenanceAgency</gi> all'interno di <gi>control</gi> per fornire un codice istituzionale addizionale o locale, rispetto a quello indicato in <gi>agencyCode</gi>, per rappresentare l'istituzione o il servizio responsabile per l'elaborazione, l'aggiornamento e la disseminazione del record EAC-CPF, strutturandolo nel formato International Standard identifier for Libraries and Related Organizations (ISIL: ISO 15511). La denominazione dell'agenzia è indicata per esteso all'interno di <gi>agencyName</gi>. Si raccomanda l'aggiunta come prefisso di un codice della nazione nel formato ISO 3166-1 alpha-2 per garantire un'univocità internazionale..</p>
+   </div>
+   <div type="mayContain">
+      <p>NMTOKEN</p>
+   </div>
+   <div type="mayOccurWithin">
+      <p>maintenanceAgency</p>
+   </div>
+   <div type="attributes">
+      <p xml:lang="eng">
+         <list xmlns="http://www.tei-c.org/ns/1.0" type="gloss">
+            <label>localType</label>
+            <item>Optional</item>
+            <label>xml:id</label>
+            <item>Optional</item>
+         </list>
+      </p>
+   </div>
+   <div type="occurrence">
+      <div type="mandatory">
+         <p xml:lang="eng">Optional</p>
+      </div>
+      <div type="repeatable">
+         <p xml:lang="eng">Repeatable</p>
+      </div>
+   </div>
+   <div type="examples">
+      <_0:egXML xmlns:_0="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+         <eac-cpf:maintenanceAgency xmlns:eac-cpf="urn:isbn:1-931666-33-4">
+            <eac-cpf:otherAgencyCode>GB-058</eac-cpf:otherAgencyCode>
+            <eac-cpf:agencyName>The British Library: Manuscript Collections</eac-cpf:agencyName>
+         </eac-cpf:maintenanceAgency>
+      </_0:egXML>
+   </div>
+</div>

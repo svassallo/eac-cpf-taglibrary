@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../TEI/schema/tagLibrary_elementDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="identityType" type="attributeDocumentation">
+   <head>
+      <att>identityType</att>
+   </head>
+   <div type="fullName">
+      <p xml:lang="ita">Tipologia dell'identità</p>
+   </div>
+   <div type="summary">
+      <p xml:lang="ita">Indica se l'identità è originaria o acquisita. Può essere particolarmente utile per il trattamento dei dati quando nello stesso documento sono descritte identità multiple.</p>
+   </div>
+   <div type="description">
+      <p xml:lang="ita">L'attributo <att>identityType</att> ricorre in<gi>identity</gi>. Sebbene sia opzionale, è fortemente raccomandato un suo utilizzo quando nello stesso documento EAC-CPF sono descritte identità multiple utilizzando <gi>multipleIdentities</gi>. Permette all'elaboratore di distinguere tra le descrizioni di una persona reale e quelle di uno o più personaggi.</p>
+   </div>
+
+   <div type="datatype" xml:lang="eng">
+      <p>"given" or "acquired"</p>
+   </div>
+
+</div>

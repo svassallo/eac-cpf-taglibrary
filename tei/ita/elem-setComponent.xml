@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="schema/tagLibrary_elementDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="setComponent" type="elementDocumentation">
+   <head>
+      <gi>setComponent</gi>
+   </head>
+   <div type="fullName">
+      <p xml:lang="ita">Raggruppamento di componenti</p>
+   </div>
+   <div type="summary">
+      <p xml:lang="ita"
+            >Elemento contenitore all'interno di <gi>alternativeSet</gi> che contiene la codifica EAC-CPF di un intero record di autorità, permettendo in questo modo l'aggregazione di record di autorità provenienti da più sistemi di autorità in un singolo <gi>cpfDescription</gi>.</p>
+   </div>
+   <div type="description">
+      <p xml:lang="ita"><gi>setComponent</gi> fornisce un contenitore per ospitare un intero record di autorità, così che record multipli della stessa entità, provenienti da diversi sistemi di autorità o in differenti linguaggi, possano essere combinati insieme all'interno di un singolo documento EAC-CPF. L'elemento obbligatorio <gi>componentEntry</gi> codifica il collegamento con il record di autorità in un sistema di autorità esterno. Un elemento <gi>descriptiveNote</gi> opzionale può essere usato per una nota testuale al fine di fornire ulteriori informazioni sul record cui si fa riferimento in <gi>setComponent</gi>.</p>
+   </div>
+   <div type="mayContain">
+      <p>componentEntry, descriptiveNote, objectBinWrap, objectXMLWrap</p>
+   </div>
+   <div type="mayOccurWithin">
+      <p>alternativeSet</p>
+   </div>
+   <div type="attributes">
+      <p xml:lang="eng">
+         <list xmlns="http://www.tei-c.org/ns/1.0" type="gloss">
+            <label>lastDateTimeVerified</label>
+            <item>Optional</item>
+            <label>xlink:actuate</label>
+            <item>Optional</item>
+            <label>xlink:arcrole</label>
+            <item>Optional</item>
+            <label>xlink:href</label>
+            <item>Optional</item>
+            <label>xlink:role</label>
+            <item>Optional</item>
+            <label>xlink:show</label>
+            <item>Optional</item>
+            <label>xlink:title</label>
+            <item>Optional</item>
+            <label>xlink:type</label>
+            <item>Required (if any XLINK attributes used)</item>
+            <label>xml:id</label>
+            <item>Optional</item>
+            <label>xml:lang</label>
+            <item>Optional</item>
+         </list>
+      </p>
+   </div>
+   <div type="occurrence">
+      <div type="mandatory">
+         <p xml:lang="eng">Mandatory</p>
+      </div>
+      <div type="repeatable">
+         <p xml:lang="eng">Repeatable</p>
+      </div>
+   </div>
+   <div type="examples">
+      <_0:egXML xmlns:_0="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+         <eac-cpf:alternativeSet xmlns:eac-cpf="urn:isbn:1-931666-33-4">
+            <eac-cpf:setComponent xmlns:xlink="http://www.w3c.org/1999/xlink"
+               xlink:href="http://authorities.loc.gov" xlink:type="simple">
+               <eac-cpf:componentEntry>Bright Sparcs Record</eac-cpf:componentEntry>
+            </eac-cpf:setComponent>
+            <eac-cpf:setComponent xmlns:xlink="http://www.w3c.org/1999/xlink"
+               xlink:href="http://nla.gov.au/anbd.aut-an35335937" xlink:type="simple">
+               <eac-cpf:componentEntry>NLA record.</eac-cpf:componentEntry>
+            </eac-cpf:setComponent>
+         </eac-cpf:alternativeSet>
+      </_0:egXML>
+   </div>
+</div>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../TEI/schema/tagLibrary_elementDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="style" type="attributeDocumentation">
+   <head>
+      <att>style</att>
+   </head>
+   <div type="fullName">
+      <p xml:lang="ita">Stile</p>
+   </div>
+   <div type="summary">
+      <p xml:lang="ita">Utilizzato per specificare uno stile di formattazione per una stringa di testo. Si raccomanda che il valore sia conforme ai CSS del W3C.</p>
+   </div>
+   <div type="description" xml:lang="eng">
+      <p xml:lang="ita"
+            >L'attributo <att>style</att> ricorre in <gi>span</gi>. Nel limitato numero di casi che gestiscono descrizioni discorsive, un elemento <gi>span</gi> con un attributo <att>style</att> può essere usato per identificare una stringa di testo arbitraria che si voglia rendere in uno specifico stile. È fortemente raccomandato che il valore di <att>style</att> sia espresso come uno stile CSS del W3c per favorire l'interoperabilità.</p>
+   </div>
+   <div type="datatype" xml:lang="eng">
+      <p>string</p>
+   </div>
+</div>

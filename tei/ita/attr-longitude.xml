@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../TEI/schema/tagLibrary_elementDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="longitude" type="attributeDocumentation">
+   <head>
+      <att>longitude</att>
+   </head>
+   <div type="fullName">
+      <p xml:lang="ita">Longitudine</p>
+   </div>
+   <div type="summary">
+      <p xml:lang="ita">Longitudine di un luogo.</p>
+   </div>
+   <div type="description" xml:lang="eng">
+      <p xml:lang="ita">L'attributo <att>longitude</att> ricorre in <gi>place</gi>. Il valore dell'attributo è la longitudine geografica del luogo citato. <att>longitude</att> dovrebbe essere usato in congiunzione con <att>latitude</att> e <att>altitude</att>. </p>
+   </div>
+   <div type="datatype" xml:lang="eng">
+      <p>NMTOKEN</p>
+   </div>
+</div>

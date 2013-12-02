@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../TEI/schema/tagLibrary_elementDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="notAfter" type="attributeDocumentation">
+   <head>
+      <att>notAfter</att>
+   </head>
+   <div type="fullName">
+      <p xml:lang="ita">Ante quem</p>
+   </div>
+   <div type="summary">
+<p xml:lang="ita">Massimo estremo cronologico recente possibile per una data incerta.</p>
+   </div>
+   <div type="description">
+      <p xml:lang="ita">L'attributo <att>notAfter</att> ricorre in <gi>date</gi>, <gi>fromDate</gi> e <gi>toDate</gi>. Per le date incerte, usate in coppia con elementi specificati dall'attributo <att>standardDate</att>, il valore in <att>notAfter</att> rappresenta l'ultima data possibile. Si veda anche <att>notBefore</att>. 
+</p>
+   </div>
+   <div type="datatype">
+      <p xml:lang="ita">Unione dei tipi di dato degli XML Schema, date (data completa), gYear (anno del calendario gregoriano) gYearMonth (anno e mese del calendario gregoriano). I casi seguenti sono tutti esempi validi: 2009-12-31, 2009, 2009-12.</p>
+   </div>
+</div>

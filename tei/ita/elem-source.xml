@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="schema/tagLibrary_elementDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="source" type="elementDocumentation">
+   <head>
+      <gi>source</gi>
+   </head>
+   <div type="fullName">
+      <p xml:lang="ita">Fonte</p>
+   </div>
+   <div type="summary">
+      <p xml:lang="ita">Fonte di testimonianza usata nella descrizione dell'entità o delle entità all'interno del documento EAC-CPF.</p>
+   </div>
+   <div type="description">
+      <p xml:lang="ita"
+            >Un elemento per identificare una determinata fonte di testimonianza usata per descrivere l'entità o le entità. Una registrazione per la fonte deve essere inclusa o in <gi>objectXMLWrap</gi> o in <gi>objectBinWrap</gi> o come descrizione testuale nell'elemento <gi>sourceEntry</gi>. Utilizzare l'elemento opzionale <gi>descriptiveNote</gi> per qualsiasi nota aggiuntiva sulla fonte. Un elemento <gi>source</gi> in questo contesto non deve essere confuso con l'elemento <gi>citation</gi> che è usato in diversi elementi descrittivi per puntare a una risorsa che fornisca informazioni descrittive che non siano indicate altrimenti nel documento EAC-CPF.</p>
+      <p xml:lang="ita">Il collegamento con la fonte può essere stabilito usando gli attributi di XML Linking Language (Xlink), per i quali si rimanda alle specifiche disponibili all'indirizzo http://www.w3.org/TR/xlink/ e la data e l'ora più recenti in cui la fonte è stata verificata possono essere indicate nell'attributo <att>lastDateTimeVerified</att>.</p>
+   </div>
+   <div type="mayContain">
+      <p>descriptiveNote, objectBinWrap, objectXMLWrap, sourceEntry</p>
+   </div>
+   <div type="mayOccurWithin">
+      <p>sources</p>
+   </div>
+   <div type="attributes">
+      <p xml:lang="eng">
+         <list xmlns="http://www.tei-c.org/ns/1.0" type="gloss">
+            <label>lastDateTimeVerified</label>
+            <item>Optional</item>
+            <label>xlink:actuate</label>
+            <item>Optional</item>
+            <label>xlink:arcrole</label>
+            <item>Optional</item>
+            <label>xlink:href</label>
+            <item>Optional</item>
+            <label>xlink:role</label>
+            <item>Optional</item>
+            <label>xlink:show</label>
+            <item>Optional</item>
+            <label>xlink:title</label>
+            <item>Optional</item>
+            <label>xlink:type</label>
+            <item>Required (if any XLINK attributes used)</item>
+            <label>xml:id</label>
+            <item>Optional</item>
+         </list>
+      </p>
+   </div>
+   <div type="reference">
+      <p>ISAAR (CPF) 5.4.8</p>
+   </div>
+   <div type="occurrence">
+      <div type="mandatory">
+         <p xml:lang="eng">Mandatory</p>
+      </div>
+      <div type="repeatable">
+         <p xml:lang="eng">Repeatable</p>
+      </div>
+   </div>
+   <div type="examples">
+      <_0:egXML xmlns:_0="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+         <eac-cpf:sources xmlns:eac-cpf="urn:isbn:1-931666-33-4">
+            <eac-cpf:source>
+               <eac-cpf:sourceEntry>HMC, Principal Family and Estate Collections: Family Names L-W, 1999</eac-cpf:sourceEntry>
+            </eac-cpf:source>
+            <eac-cpf:source>
+               <eac-cpf:sourceEntry>HMC, Complete Peerage, 1936</eac-cpf:sourceEntry>
+            </eac-cpf:source>
+         </eac-cpf:sources>
+      </_0:egXML>
+      <_0:egXML xmlns:_0="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+         <eac-cpf:sources xmlns:eac-cpf="urn:isbn:1-931666-33-4">
+            <eac-cpf:source>
+               <eac-cpf:sourceEntry>Union Lists of Artist Names, The Getty Research Institute</eac-cpf:sourceEntry>
+            </eac-cpf:source>
+            <eac-cpf:source>
+               <eac-cpf:sourceEntry>Cultural Objects Name Authority Online, The Getty Research Institute</eac-cpf:sourceEntry>
+            </eac-cpf:source>
+         </eac-cpf:sources>
+      </_0:egXML>
+   </div>
+</div>

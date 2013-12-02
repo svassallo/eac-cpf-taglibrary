@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../TEI/schema/tagLibrary_elementDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="xmlid" type="attributeDocumentation">
+    <head>
+        <att>xml:id</att>
+    </head>
+    <div type="fullName">
+        <p xml:lang="ita">XML ID</p>
+    </div>
+    <div type="summary">
+<p xml:lang="ita">Identificativo univoco disponibile nella maggior parte degli elementi che può essere usato per identificare uno specifico elemento nel documento EAC-CPF.</p>
+    </div>
+    <div type="description">
+        <p xml:lang="ita"
+                >Un identificativo usato per individuare un elemento così che questo possa essere riferito o citato da qualcun altro. Ogni <att>xml:id</att> all'interno del documento deve avere un valore univoco. L'attributo <att>xml:id</att> norma l'identificazione degli elementi agevolando così la costruzione di collegamenti tra questi elementi e altre risorse. Ad esempio, <att>xml:id</att> può essere usato per identificare univocamente duo o più <gi>cpfDescription</gi> all'interno di <gi>multipleIdentities</gi>. Identificare o distinguere univocamente due o più <gi>cpfDescription</gi> può essere essenziale o utile nella manutenzione di sistemi qualora si colleghino risorse, funzioni o enti, persone o famiglie con una tra le due o più identità rappresentate nel documento EAC-CPF.</p>
+    </div>
+    <div type="datatype" xml:lang="eng">
+        <p>NMTOKEN</p>
+    </div>
+</div>

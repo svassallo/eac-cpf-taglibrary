@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="schema/tagLibrary_elementDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<div xmlns="http://www.tei-c.org/ns/1.0"
+     xml:id="accuracy"
+     type="attributeDocumentation">
+   <head>
+      <att>accuracy</att>
+   </head>
+   <div type="fullName">
+      <p xml:lang="ita">Accuratezza</p>
+   </div>
+   <div type="summary">
+      <p xml:lang="ita">Specifica l'accuratezza nella dichiarazione di un luogo.</p>
+      
+   </div>
+   <div type="description">
+      <p xml:lang="ita">All'interno dell'elemento <gi>placeEntry</gi> questo attributo permette di specificare l'accuratezza.</p>
+   </div>
+   <div type="datatype" xml:lang="eng">
+      <p>string</p>
+   </div>
+</div>

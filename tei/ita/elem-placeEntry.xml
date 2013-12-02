@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="schema/tagLibrary_elementDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="placeEntry" type="elementDocumentation">
+   <head>
+      <gi>placeEntry</gi>
+   </head>
+   <div type="fullName">
+      <p xml:lang="ita">Toponimo</p>
+   </div>
+   <div type="summary">
+      <p xml:lang="ita">Elemento utilizzato sia nell'area della descrizione sia in quella delle relazioni per codificare informazioni sul luogo o la giurisdizione dove l'entità descritta nel documento EAC-CPF aveva sede, viveva o con cui ha avuto qualche altra connessione significante.</p>
+   </div>
+   <div type="description">
+      <p xml:lang="ita"
+            >I luoghi dovrebbero essere identificati da un denominazione propria che comunemente disegna il luogo, l'area naturale, o la giurisdizione politica. Si raccomanda che la denominazione del luogo sia scelta da vocabolari autorizzati. All'interno di <gi>place</gi>, si raccomanda fortemente l'utilizzo di <gi>placeRole</gi> per descrivere la natura dell'associazione tra il luogo e l'entità.</p>
+      <p xml:lang="ita"
+            >Sono disponibili gli attributi <att>latitude</att>, <att>longitude</att> e <att>altitude</att> per specificare i dati geografici. L'attributo <att>accuracy</att> può essere utilizzato per indicare informazioni incerte. L'attributo <att>vocabularySource</att>-può essere usato per indicare il vocabolario controllato da cui i termini di <gi>placeEntry</gi> sono derivati.</p>
+      <p xml:lang="ita"
+            >L'elemento <gi>placeEntry</gi> è ripetibile. È fortemente raccomandato che, all'interno di <gi>place</gi>, l'elemento <gi>placeEntry</gi> sia ripetuto solo per rappresentare la stessa denominazione del luogo in lingue differenti, con un attributo <att>xml:lang</att> di accompagnamento.</p>
+   </div>
+   <div type="mayContain">
+      <p>[text]</p>
+   </div>
+   <div type="mayOccurWithin">
+      <p>chronItem, cpfRelation, function, functionRelation, legalStatus, localDescription, mandate, occupation, place, resourceRelation</p>
+   </div>
+   <div type="attributes">
+      <p xml:lang="eng">
+         <list xmlns="http://www.tei-c.org/ns/1.0" type="gloss">
+            <label>accuracy</label>
+            <item>Optional</item>
+            <label>altitude</label>
+            <item>Optional</item>
+            <label>countryCode</label>
+            <item>Optional</item>
+            <label>latitude</label>
+            <item>Optional</item>
+            <label>localType</label>
+            <item>Optional</item>
+            <label>longitude</label>
+            <item>Optional</item>
+            <label>scriptCode</label>
+            <item>Optional</item>
+            <label>transliteration</label>
+            <item>Optional</item>
+            <label>vocabularySource</label>
+            <item>Optional</item>
+            <label>xml:id</label>
+            <item>Optional</item>
+            <label>xml:lang</label>
+            <item>Optional</item>
+         </list>
+      </p>
+   </div>
+   <div type="occurrence">
+      <div type="mandatory">
+         <p xml:lang="eng">Optional</p>
+      </div>
+      <div type="repeatable">
+         <p xml:lang="eng">Repeatable</p>
+      </div>
+   </div>
+   <div type="examples">
+      <_0:egXML xmlns:_0="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+         <eac-cpf:place xmlns:eac-cpf="urn:isbn:1-931666-33-4">
+            <eac-cpf:placeRole>Residence</eac-cpf:placeRole>
+            <eac-cpf:placeEntry localType="address">31 rue Cambon</eac-cpf:placeEntry>
+            <eac-cpf:placeEntry localType="address">Paris</eac-cpf:placeEntry>
+            <eac-cpf:placeEntry localType="address" countryCode="FR">France</eac-cpf:placeEntry>
+         </eac-cpf:place>
+         <eac-cpf:place xmlns:eac-cpf="urn:isbn:1-931666-33-4">
+            <eac-cpf:placeRole>Birthplace</eac-cpf:placeRole>
+            <eac-cpf:placeEntry latitude="59.37541" longitude="17.03371"
+               >Strängnäs</eac-cpf:placeEntry>
+         </eac-cpf:place>
+         <eac-cpf:place xmlns:eac-cpf="urn:isbn:1-931666-33-4">
+            <eac-cpf:placeRole>Family seat</eac-cpf:placeRole>
+            <eac-cpf:placeEntry vocabularySource="lcsh" latitude="55.4667" longitude="4.3000"
+               >Auchinleck (Scotland)</eac-cpf:placeEntry>
+            <eac-cpf:dateRange>
+               <eac-cpf:fromDate standardDate="1504">1504</eac-cpf:fromDate>
+               <eac-cpf:toDate standardDate="1986">1986</eac-cpf:toDate>
+            </eac-cpf:dateRange>
+         </eac-cpf:place>
+      </_0:egXML>
+   </div>
+</div>

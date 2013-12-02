@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../TEI/schema/tagLibrary_elementDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="xlinkActuate" type="attributeDocumentation">
+   <head>
+      <att>xlink:actuate</att>
+   </head>
+   <div type="fullName">
+      <p xml:lang="ita">Xlink: actuate</p>
+   </div>
+   <div type="summary">
+      <p xml:lang="ita">Usato per determinare se il collegamento alla risorsa remota sia risolto quando la risorsa che lo contiene è caricata o quando l'utente richiede esplicitamente la risorsa.</p>
+   </div>
+   <div type="description">
+      <p xml:lang="ita">L'attributo <att>xlink:actuate</att> dovrebbe essere usato con <att>xlink:show</att> per indicare il comportamento atteso. L'attributo <att>xlink:actuate</att> è utilizzato per segnalare il comportamento atteso per quanto riguarda quando la risorsa remota debba essere caricata. I valori indicano se la risorsa deve essere caricata automaticamente quando la risorsa che la contiene è caricata ("onLoad" al caricamento) o solo dopo un'esplicita richiesta della risorsa da parte dell'utente ("onRequest" su richiesta). "None" (nessuno) o "other" (altro) sono gli altri valori accettati.</p>
+   </div>
+   <div type="datatype" xml:lang="eng">
+      <p>"onLoad" or "onRequest" or "other" or "none"</p>
+   </div>
+</div>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="schema/tagLibrary_elementDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="localControl" type="elementDocumentation">
+   <head>
+      <gi>localControl</gi>
+   </head>
+   <div type="fullName">
+      <p xml:lang="ita">Elemento di controllo locale</p>
+   </div>
+   <div type="summary">
+      <p xml:lang="ita"
+            >Voce di controllo addizionale necessaria per gestire pratiche locali.</p>
+   </div>
+   <div type="description">
+      <p xml:lang="ita"
+            >Un elemento usato per registrare e definire ogni informazione di controllo necessaria per gestire pratiche locali, in aggiunta agli elementi altrimenti resi disponibili all'interno di <gi>control</gi>. Il valore della voce può essere fornito all'interno di un elemento <gi>term</gi> e possono essere indicate date associate o come data singola (<gi>date</gi>) o come intervallo di date (<gi>dateRange</gi>).</p>
+      <p xml:lang="ita">La tipologia della voce deve essere definita usando l'attributo <att>localType</att>.</p>
+   </div>
+   <div type="mayContain">
+      <p>date, dateRange, term</p>
+   </div>
+   <div type="mayOccurWithin">
+      <p>control</p>
+   </div>
+   <div type="attributes">
+      <p xml:lang="eng">
+         <list xmlns="http://www.tei-c.org/ns/1.0" type="gloss">
+            <label>localType</label>
+            <item>Optional</item>
+            <label>xml:id</label>
+            <item>Optional</item>
+            <label>xml:lang</label>
+            <item>Optional</item>
+         </list>
+      </p>
+   </div>
+   <div type="occurrence">
+      <div type="mandatory">
+         <p xml:lang="eng">Optional</p>
+      </div>
+      <div type="repeatable">
+         <p xml:lang="eng">Repeatable</p>
+      </div>
+   </div>
+   <div type="examples">
+      <_0:egXML xmlns:_0="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+         <eac-cpf:localControl xmlns:eac-cpf="urn:isbn:1-931666-33-4" localType="detailLevel">
+            <eac-cpf:term>minimal</eac-cpf:term>
+         </eac-cpf:localControl>
+      </_0:egXML>
+   </div>
+</div>

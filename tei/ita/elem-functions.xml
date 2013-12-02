@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="schema/tagLibrary_elementDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="functions" type="elementDocumentation">
+   <head>
+      <gi>functions</gi>
+   </head>
+   <div type="fullName">
+      <p xml:lang="ita">Funzioni</p>
+   </div>
+   <div type="summary">
+      <p xml:lang="ita">Elemento di raggruppamento utilizzato per raccogliere insieme singoli elementi <gi>function</gi>.</p>
+   </div>
+   <div type="description">
+      <p xml:lang="ita">Utilizzare l'elemento opzionale <gi>functions</gi> per raggruppare insieme una o più occorrenze di <gi>function</gi> in modo che esse possano essere gestite come un pacchetto. Un singolo <gi>function</gi> può rimanere da solo o può essere comunque racchiuso all'interno di <gi>functions</gi>.</p>
+      <p xml:lang="ita">Gli elementi opzionali <gi>citation</gi>, <gi>list</gi> e <gi>outline</gi> sono usati per gestire una maggiore complessità nell'esprimere o rappresentare le funzioni, i processi, le attività, le operazioni o le transizioni che si stanno descrivendo. Una semplice espressione discorsiva delle funzioni può essere codificata in uno o più elementi <gi>p</gi>.</p>
+   </div>
+   <div type="mayContain">
+      <p>citation, descriptiveNote, function, list, outline, p</p>
+   </div>
+   <div type="mayOccurWithin">
+      <p>description</p>
+   </div>
+   <div type="attributes">
+      <p xml:lang="eng">
+         <list type="gloss">
+            <label>localType</label>
+            <item>optional</item>
+            <label>xml:id</label>
+            <item>optional</item>
+            <label>xml:lang</label>
+            <item>optional</item>
+         </list>
+      </p>
+   </div>
+   <div type="reference">
+      <p>ISAAR (CPF) 5.2.5</p>
+   </div>
+   <div type="occurrence">
+      <div type="mandatory">
+         <p xml:lang="eng">Optional</p>
+      </div>
+      <div type="repeatable">
+         <p xml:lang="eng">Repeatable</p>
+      </div>
+   </div>
+   <div type="examples">
+      <_0:egXML xmlns:_0="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+         <eac-cpf:functions xmlns:eac-cpf="urn:isbn:1-931666-33-4">
+            <eac-cpf:function>
+               <eac-cpf:term>Indigenous land rights plaintiff</eac-cpf:term>
+            </eac-cpf:function>
+            <eac-cpf:function>
+               <eac-cpf:term>Indigenous arts administrator</eac-cpf:term>
+            </eac-cpf:function>
+         </eac-cpf:functions>
+      </_0:egXML>
+   </div>
+</div>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="schema/tagLibrary_elementDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="localDescriptions" type="elementDocumentation">
+   <head>
+      <gi>localDescriptions</gi>
+   </head>
+   <div type="fullName">
+      <p xml:lang="ita"
+         >Elementi di descrizione locale</p>
+   </div>
+   <div type="summary">
+      <p xml:lang="ita"
+            >Elemento di raggruppamento usato per raccogliere insieme singoli elementi <gi>localDescription</gi>.</p>
+   </div>
+   <div type="description">
+      <p xml:lang="ita"
+            >Utilizzare l'elemento opzionale <gi>localDescriptions</gi> per raggruppare insieme una o più occorrenze di <gi>localDescription</gi> in modo che esse possano essere gestite come un pacchetto. Un singolo <gi>localDescription</gi> può rimanere da solo o può essere comunque racchiuso all'interno di <gi>localDescriptions</gi>.</p>
+      <p xml:lang="ita">Gli elementi opzionali <gi>citation</gi>, <gi>list</gi> e <gi>outline</gi> sono usati per gestire una maggiore complessità nell'esprimere o rappresentare le informazioni che si stanno descrivendo. Una semplice espressione discorsiva può essere codificata in uno o più elementi <gi>p</gi>.</p>
+   </div>
+   <div type="mayContain">
+      <p>citation, list, localDescription, outline, p, descriptiveNote</p>
+   </div>
+   <div type="mayOccurWithin">
+      <p>description</p>
+   </div>
+   <div type="attributes">
+      <p xml:lang="eng">
+         <list xmlns="http://www.tei-c.org/ns/1.0" type="gloss">
+            <label>localType</label>
+            <item>Required</item>
+            <label>xml:id</label>
+            <item>Optional</item>
+            <label>xml:lang</label>
+            <item>Optional</item>
+         </list>
+      </p>
+   </div>
+   <div type="occurrence">
+      <div type="mandatory">
+         <p xml:lang="eng">Optional</p>
+      </div>
+      <div type="repeatable">
+         <p xml:lang="eng">Repeatable</p>
+      </div>
+   </div>
+   <div type="examples">
+      <_0:egXML xmlns:_0="http://www.tei-c.org/ns/Examples">
+         <eac-cpf:localDescriptions xmlns:eac-cpf="urn:isbn:1-931666-33-4"
+            localType="http://....fr/eac-cpf/localType/">
+            <eac-cpf:localDescription localType="http://....fr/eac-cpf/localType/nationalité">
+               <eac-cpf:term vocabularySource="http://....fr/eac-cpf/localType/nationalité#French"
+                  >French</eac-cpf:term>
+               <eac-cpf:placeEntry countryCode="FR"
+                  vocabularySource="http://....fr/registerOfFrenchPlaceNames#France"
+                  >France</eac-cpf:placeEntry>
+            </eac-cpf:localDescription>
+            <eac-cpf:localDescription localType="http://....fr/eac-cpf/localType/citoyenneté">
+               <eac-cpf:term vocabularySource="http://....fr/eac-cpf/localType/citoyenneté#French"
+                  >French</eac-cpf:term>
+               <eac-cpf:placeEntry countryCode="FR"
+                  vocabularySource="http://....fr/registerOfFrenchPlaceNames#France"
+                  >France</eac-cpf:placeEntry>
+            </eac-cpf:localDescription>
+            <eac-cpf:localDescription localType="http://....fr/eac-cpf/localType/citoyenneté">
+               <eac-cpf:term vocabularySource="http://....fr/eac-cpf/localType/citoyenneté#Brazil"
+                  >Brazil</eac-cpf:term>
+               <eac-cpf:placeEntry countryCode="BR"
+                  vocabularySource="http://....fr/registerOfFrenchPlaceNames#France"
+                  >Brazil</eac-cpf:placeEntry>
+            </eac-cpf:localDescription>
+         </eac-cpf:localDescriptions>
+      </_0:egXML>
+   </div>
+</div>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="schema/tagLibrary_elementDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="fromDate" type="elementDocumentation">
+    <head>
+        <gi>fromDate</gi>
+    </head>
+    <div type="fullName">
+        <p xml:lang="ita">Estremo remoto</p>
+    </div>
+    <div type="summary">
+        <p xml:lang="ita">Estremo remoto in un intervallo di date.</p>
+    </div>
+    <div type="description">
+        <p xml:lang="ita"
+                >L'estremo remoto in un intervallo di date, <gi>fromDate</gi> può contenere date certe o approssimate espresse come mesi, giorni o anni in qualunque formato. Una forma numerica standardizzata della data (nel formato YYYYMMDD, etc) può essere specificata nell'attributo <att>standardDate</att>. Gli attributi <att>notBefore</att> (termine post quem) e <att>notAfter</att> (termine ante quem) possono essere usati per indicare date incerte.</p>
+    </div>
+    <div type="mayContain">
+        <p>[text]</p>
+    </div>
+    <div type="mayOccurWithin">
+        <p>dateRange</p>
+    </div>
+    <div type="attributes">
+        <p xml:lang="eng">
+            <list type="gloss">
+                <label>notAfter</label>
+                <item>optional</item>
+                <label>notBefore</label>
+                <item>optional</item>
+                <label>standardDate</label>
+                <item>optional</item>
+                <label>xml:id</label>
+                <item>optional</item>
+                <label>xml:lang</label>
+                <item>optional</item>
+            </list>
+        </p>
+
+    </div>
+    <div type="occurrence">
+        <div type="mandatory">
+            <p xml:lang="eng">Mandatory</p>
+        </div>
+        <div type="repeatable">
+            <p xml:lang="eng">Non-repeatable</p>
+        </div>
+    </div>
+    <div type="examples">
+        <egXML xml:lang="eng" xmlns="http://www.tei-c.org/ns/Examples">
+            <eac-cpf:existDates xmlns:eac-cpf="urn:isbn:1-931666-33-4">
+                <eac-cpf:dateRange>
+                    <eac-cpf:fromDate standardDate="1868">1868</eac-cpf:fromDate>
+                    <eac-cpf:toDate standardDate="1936">1936</eac-cpf:toDate>
+                </eac-cpf:dateRange>
+            </eac-cpf:existDates>
+        </egXML>
+    </div>
+</div>

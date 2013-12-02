@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="schema/tagLibrary_elementDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="occupation" type="elementDocumentation">
+   <head>
+      <gi>occupation</gi>
+   </head>
+   <div type="fullName">
+      <p xml:lang="ita">Occupazione</p>
+   </div>
+   <div type="summary">
+      <p xml:lang="ita">Elemento che fornisce informazioni sull'occupazione dell'entità che si sta descrivendo.</p>
+   </div>
+   <div type="description">
+      <p xml:lang="ita"
+            >Un elemento <gi>occupation</gi> è un elemento contenitore usato per codificare un termine di indice, attraverso l'elemento figlio <gi>term</gi>. I termini sono usati per identificare un'occupazione condotta dall'entità EAC-CPF. I termini possono essere attinti da un vocabolario controllato o possono essere termini in linguaggio naturale. Le date o gli interalli di dati associati (<gi>date</gi>, <gi>dateRange</gi> o <gi>dateSet</gi>) e i luoghi (<gi>placeEntry</gi>) possono essere inclusi per circostanziare ulteriormente il significato dei termini. Un elemento <gi>descriptiveNote</gi> può essere incluso qualora sia necessaria una spiegazione testuale maggiormente estesa.</p>
+      <p xml:lang="ita"
+            >Un singolo elemento <gi>occupation</gi> può essere codificato direttamente all'interno di <gi>description</gi> In alternativa, molteplici elementi <gi>occupation</gi> possono essere raggruppati all'interno del contenitore <gi>occupations</gi> per semplificare la loro gestione come insieme.</p>
+      <p xml:lang="ita">Le occupazioni possono essere in alternativa descritte discorsivamente in <gi>biogHist</gi> (ISAAR (CPF) 5.2.2 Storia biografica). L'elemento <gi>occupation</gi> dovrebbe essere usato ogni volta che è necessario un trattamento semantico separato delle informazioni sulle occupazioni.</p>
+   </div>
+   <div type="mayContain">
+      <p>citation, date, dateRange, dateSet, descriptiveNote, placeEntry, term</p>
+   </div>
+   <div type="mayOccurWithin">
+      <p>description, occupations</p>
+   </div>
+   <div type="attributes">
+      <p xml:lang="eng">
+         <list xmlns="http://www.tei-c.org/ns/1.0" type="gloss">
+            <label>localType</label>
+            <item>Optional</item>
+            <label>xml:id</label>
+            <item>Optional</item>
+            <label>xml:lang</label>
+            <item>Optional</item>
+         </list>
+      </p>
+   </div>
+   <div type="reference">
+      <p>ISAAR (CPF) 5.2.5</p>
+   </div>
+   <div type="occurrence">
+      <div type="mandatory">
+         <p xml:lang="eng">Optional</p>
+      </div>
+      <div type="repeatable">
+         <p xml:lang="eng">Repeatable</p>
+      </div>
+   </div>
+   <div type="examples">
+      <_0:egXML xmlns:_0="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+         <eac-cpf:occupations xmlns:eac-cpf="urn:isbn:1-931666-33-4">
+            <eac-cpf:occupation>
+               <eac-cpf:term>Teacher</eac-cpf:term>
+            </eac-cpf:occupation>
+            <eac-cpf:occupation>
+               <eac-cpf:term>Railway labourer</eac-cpf:term>
+            </eac-cpf:occupation>
+         </eac-cpf:occupations>
+      </_0:egXML>
+      <_0:egXML xmlns:_0="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+         <eac-cpf:description xmlns:eac-cpf="urn:isbn:1-931666-33-4">
+            <eac-cpf:occupations>
+               <eac-cpf:occupation>
+                  <eac-cpf:term>Writer/Poet</eac-cpf:term>
+                  <eac-cpf:dateRange>
+                     <eac-cpf:fromDate>1931</eac-cpf:fromDate>
+                     <eac-cpf:toDate>1971</eac-cpf:toDate>
+                  </eac-cpf:dateRange>
+               </eac-cpf:occupation>
+               <eac-cpf:occupation>
+                  <eac-cpf:term>Diplomat</eac-cpf:term>
+                  <eac-cpf:dateRange>
+                     <eac-cpf:fromDate>1926</eac-cpf:fromDate>
+                     <eac-cpf:toDate>1962</eac-cpf:toDate>
+                  </eac-cpf:dateRange>
+               </eac-cpf:occupation>
+               <eac-cpf:occupation>
+                  <eac-cpf:term>Vice Consul at the General Consulate of the Hellenic Republic in London</eac-cpf:term>
+                  <eac-cpf:dateRange>
+                     <eac-cpf:fromDate>1931</eac-cpf:fromDate>
+                     <eac-cpf:toDate>1934</eac-cpf:toDate>
+                  </eac-cpf:dateRange>
+               </eac-cpf:occupation>
+               <eac-cpf:occupation>
+                  <eac-cpf:term>Consul in Koritsa</eac-cpf:term>
+                  <eac-cpf:dateRange>
+                     <eac-cpf:fromDate>1936</eac-cpf:fromDate>
+                     <eac-cpf:toDate>1938</eac-cpf:toDate>
+                  </eac-cpf:dateRange>
+               </eac-cpf:occupation>
+               <eac-cpf:occupation>
+                  <eac-cpf:term>Head of the Foreign Press Departement (Sub ministry of Press and Information) in Athens</eac-cpf:term>
+                  <eac-cpf:dateRange>
+                     <eac-cpf:fromDate>1938</eac-cpf:fromDate>
+                     <eac-cpf:toDate>1941</eac-cpf:toDate>
+                  </eac-cpf:dateRange>
+               </eac-cpf:occupation>
+               <eac-cpf:occupation>
+                  <eac-cpf:term>Diplomat in the Greek Embassy of Pretoria</eac-cpf:term>
+                  <eac-cpf:dateRange>
+                     <eac-cpf:fromDate>1941</eac-cpf:fromDate>
+                     <eac-cpf:toDate>1942</eac-cpf:toDate>
+                  </eac-cpf:dateRange>
+               </eac-cpf:occupation>
+               <eac-cpf:occupation>
+                  <eac-cpf:term>Director of the political office of Viceroy Archbishop Damaskinos and director of the National Theatre</eac-cpf:term>
+                  <eac-cpf:date>1945</eac-cpf:date>
+               </eac-cpf:occupation>
+               <eac-cpf:occupation>
+                  <eac-cpf:term>Embassy Counsellor in Ancara</eac-cpf:term>
+                  <eac-cpf:dateRange>
+                     <eac-cpf:fromDate>1948</eac-cpf:fromDate>
+                     <eac-cpf:toDate>1950</eac-cpf:toDate>
+                  </eac-cpf:dateRange>
+               </eac-cpf:occupation>
+               <eac-cpf:occupation>
+                  <eac-cpf:term>Embassy Counsellor in London</eac-cpf:term>
+                  <eac-cpf:dateRange>
+                     <eac-cpf:fromDate>1951</eac-cpf:fromDate>
+                     <eac-cpf:toDate>1953</eac-cpf:toDate>
+                  </eac-cpf:dateRange>
+               </eac-cpf:occupation>
+               <eac-cpf:occupation>
+                  <eac-cpf:term>Appointed as minister to Lebanon (with responsibilities for Libanon, Syria, Jordan, and Iraq</eac-cpf:term>
+                  <eac-cpf:dateRange>
+                     <eac-cpf:fromDate>1952</eac-cpf:fromDate>
+                     <eac-cpf:toDate>1956</eac-cpf:toDate>
+                  </eac-cpf:dateRange>
+               </eac-cpf:occupation>
+               <eac-cpf:occupation>
+                  <eac-cpf:term>Head of the Second Department of Politics (Ministry of Foreign Affairs) in Athens</eac-cpf:term>
+                  <eac-cpf:date>1956</eac-cpf:date>
+               </eac-cpf:occupation>
+               <eac-cpf:occupation>
+                  <eac-cpf:term>Royal Greek Ambassador in London</eac-cpf:term>
+                  <eac-cpf:dateRange>
+                     <eac-cpf:fromDate>1957</eac-cpf:fromDate>
+                     <eac-cpf:toDate>1962</eac-cpf:toDate>
+                  </eac-cpf:dateRange>
+               </eac-cpf:occupation>
+            </eac-cpf:occupations>
+            <eac-cpf:biogHist>
+               <eac-cpf:citation>The complete biography of George Seferis can be found in "Beaton, Roderick .<eac-cpf:span
+                     style="italics"
+                     >George Seferis: Waiting for the Angel – A Biography.</eac-cpf:span>New Haven: Yale University Press, 2003."</eac-cpf:citation>
+            </eac-cpf:biogHist>
+         </eac-cpf:description>
+      </_0:egXML>
+   </div>
+</div>

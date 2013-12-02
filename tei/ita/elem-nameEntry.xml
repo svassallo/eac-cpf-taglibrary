@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="schema/tagLibrary_elementDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="nameEntry" type="elementDocumentation">
+   <head>
+      <gi>nameEntry</gi>
+   </head>
+   <div type="fullName">
+      <p xml:lang="ita">Denominazione</p>
+   </div>
+   <div type="summary">
+      <p xml:lang="ita">Elemento che contiene il nome di un ente, di una persona o di una famiglia. <gi>nameEntry</gi> è composto da uno o più elementi <gi>part</gi> in modo che l'entità possa essere identificata con certezza e distinta da altre che hanno la stessa denominazione o una simile.</p>
+   </div>
+   <div type="description">
+      <p xml:lang="ita">In <gi>identity</gi>, l'elemento <gi>nameEntry</gi> è utilizzato per indicare una denominazione con cui è conosciuto l'ente, la persona o la famiglia descritto nel record EAC-CPF. </p>
+      <p xml:lang="ita"
+            >Quando <gi>nameEntry</gi> ricorre all'interno di <gi>nameEntryParallel</gi>, l'elemento è usato per indicare due o più forme parallele (i.e. forme ufficiali della denominazione in lingue e scritture differenti o forme traslitterate della denominazione). Quando <gi>nameEntry</gi> non è incluso all'interno di <gi>nameEntryParallel</gi>, l'elemento è usato per indicare la forma autorizzata o le forme alternative della denominazione standardizzate o meno.</p>
+      <p xml:lang="ita">Ogni forma della denominazione è indicata in un distinto elemento <gi>nameEntry</gi>.</p>
+      <p xml:lang="ita">Ogni <gi>nameEntry</gi> deve contenere almeno un elemento <gi>part</gi>. Nell'elemento <gi>nameEntry</gi> ogni componente della denominazione può essere indicato in un elemento <gi>part</gi> distinto. </p>
+      <p xml:lang="ita">Quando <gi>nameEntry</gi> non occorre all'interno di <gi>nameEntryParallel</gi>, può comprendere due elementi opzionali, <gi>authorizedForm</gi> e <gi>alternativeForm</gi>, per render conto con maggior precisione dello status della forma della denominazione contenuta nell'elemento <gi>nameEntry</gi>, rispetto alle altre possibili forme della denominazione contenute in altri elementi <gi>nameEntry</gi>. </p>
+      <p xml:lang="ita">Quando non incluso in <gi>nameEntryParellel</gi>, l'elemento <gi>nameEntry</gi> può inoltre contenere un elemento <gi>useDates</gi> per indicare le date di validità della denominazione. 
+Gli attributi <att>scriptCode</att> e <att>xml:lang</att> sono utilizzati per specificare la scrittura e la lingua di ogni denominazione riportata in <gi>nameEntry</gi>.</p>
+      <p xml:lang="ita">Se la forma della denominazione riportata in <gi>nameEntry</gi> è traslitterata, l'attributo <att>transliteration</att> è usato per indicare le convenzioni o le regole applicate per traslitterare quella forma della denominazione. </p>
+   </div>
+   <div type="mayContain">
+      <p>alternativeForm, authorizedForm, part, preferredForm, useDates</p>
+   </div>
+   <div type="mayOccurWithin">
+      <p>identity, nameEntryParallel</p>
+   </div>
+   <div type="attributes">
+      <p xml:lang="eng">
+         <list xmlns="http://www.tei-c.org/ns/1.0" type="gloss">
+            <label>localType</label>
+            <item>Optional</item>
+            <label>scriptCode</label>
+            <item>Optional</item>
+            <label>transliteration</label>
+            <item>Optional</item>
+            <label>xml:id</label>
+            <item>Optional</item>
+            <label>xml:lang</label>
+            <item>Optional</item>
+         </list>
+      </p>
+   </div>
+   <div type="reference">
+      <p>ISAAR (CPF) 5.1.2, 5.1.3, 5.1.4, 5.1.5</p>
+   </div>
+   <div type="occurrence">
+      <div type="mandatory">
+         <p xml:lang="eng">Mandatory</p>
+      </div>
+      <div type="repeatable">
+         <p xml:lang="eng">Repeatable</p>
+      </div>
+   </div>
+   <div type="examples">
+      <_0:egXML xmlns:_0="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+         <eac-cpf:nameEntry xmlns:eac-cpf="urn:isbn:1-931666-33-4">
+            <eac-cpf:part localType="surname">Lemoyne</eac-cpf:part>
+            <eac-cpf:part localType="forename">Francois</eac-cpf:part>
+            <eac-cpf:authorizedForm>AFNOR</eac-cpf:authorizedForm>
+         </eac-cpf:nameEntry>
+         <eac-cpf:nameEntry xmlns:eac-cpf="urn:isbn:1-931666-33-4">
+            <eac-cpf:part localType="surname">Lemoine</eac-cpf:part>
+            <eac-cpf:part localType="forename">Francois</eac-cpf:part>
+            <eac-cpf:alternativeForm>AFNOR</eac-cpf:alternativeForm>
+         </eac-cpf:nameEntry>
+         <eac-cpf:nameEntry xmlns:eac-cpf="urn:isbn:1-931666-33-4">
+            <eac-cpf:part>Brown, Bob</eac-cpf:part>
+            <eac-cpf:useDates>
+               <eac-cpf:dateRange>
+                  <eac-cpf:fromDate standardDate="1886">1886</eac-cpf:fromDate>
+                  <eac-cpf:toDate standardDate="1959">1959</eac-cpf:toDate>
+               </eac-cpf:dateRange>
+            </eac-cpf:useDates>
+            <eac-cpf:authorizedForm>AACR2</eac-cpf:authorizedForm>
+         </eac-cpf:nameEntry>
+      </_0:egXML>
+   </div>
+</div>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="schema/tagLibrary_elementDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="structureOrGenealogy" type="elementDocumentation">
+   <head>
+      <gi>structureOrGenealogy</gi>
+   </head>
+   <div type="fullName">
+      <p xml:lang="ita">Struttura amministrativa o genealogia</p>
+   </div>
+   <div type="summary">
+      <p xml:lang="ita"
+         >Descrizione della struttura amministrativa interna di un ente o della genealogia di una famiglia.</p>
+   </div>
+   <div type="description">
+      <p xml:lang="ita"
+         ><gi>structureOrGenealogy</gi> codifica, all'interno dell'area della descrizione, le informazioni per esprimere la struttura amministrativa interna di un ente e le date di ogni cambiamento di questa struttura che siano pertinenti per capire il modo in cui l'ente svolge le sue attività (come organigrammi precedenti) o per esprimere la genealogia di una famiglia (come l'albero genealogico) in modo da illustrare le interrelazioni dei sui membri con le relative date di copertura.</p>
+      <p xml:lang="ita"
+            >Gli elementi opzionali <gi>list</gi> e <gi>outline</gi> sono usati per gestire una maggiore complessità nell'esprimere o rappresentare le attività che sono descritte. <gi>citation</gi> può essere utilizzato per fornire un collegamento a documenti esterni come organigrammi o alberi genealogici. Una semplice espressione discorsiva delle attività può essere codificata in uno o più elementi <gi>p</gi>.</p>
+      <p xml:lang="ita"
+            >La genealogia e le informazioni sulla struttura amministrativa possono essere in alternativa descritte discorsivamente in <gi>biogHist</gi> (ISAAR (CPF) 5.2.2 Storia biografica) o con diversi elementi <gi>cpfRelation</gi> (ISAAR (CPF) 5.3). L'elemento <gi>structureOrGenealogy</gi> dovrebbe essere usato ogni volta che è necessario un trattamento semantico separato delle informazioni sulla struttura amministrativa o genealogica.</p>
+   </div>
+   <div type="mayContain">
+      <p>citation, list, outline, p</p>
+   </div>
+   <div type="mayOccurWithin">
+      <p>description</p>
+   </div>
+   <div type="attributes">
+      <p xml:lang="eng">
+         <list xmlns="http://www.tei-c.org/ns/1.0" type="gloss">
+            <label>localType</label>
+            <item>Optional</item>
+            <label>xml:id</label>
+            <item>Optional</item>
+            <label>xml:lang</label>
+            <item>Optional</item>
+         </list>
+      </p>
+   </div>
+   <div type="reference">
+      <p>ISAAR (CPF) 5.2.7</p>
+   </div>
+   <div type="occurrence">
+      <div type="mandatory">
+         <p xml:lang="eng">Optional</p>
+      </div>
+      <div type="repeatable">
+         <p xml:lang="eng">Repeatable</p>
+      </div>
+   </div>
+   <div type="examples">
+      <_0:egXML xmlns:_0="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+         <eac-cpf:structureOrGenealogy xmlns:eac-cpf="urn:isbn:1-931666-33-4">
+            <eac-cpf:p>Sir Edward Noel (d 1643) married Julian, daughter and co-heir of Baptists Hicks (d 1629), Viscount Campden, and succeeded to the viscouty of Campden and a portion of his father-in-law's estates. The third Viscount Campden (1612-82) married Hester Wotton, daughter of the second Baron Wotton. The fourth Viscount Campden (1641-1689, created Earl of Gainsborough, 1682) married Elizabeth Wriothesley, elder daughter of the fourth Earl of Southampton. Jane Noel (d 1811), sister of the fifth and sixth Earls of Gainsborough, married Gerard Anne Edwards of Welham Grove (Leicetershire) and had issue Gerard Noel Edwards (1759-1838). He married in 1780 Diana Middleton (1762-1823 suo jure Baroness Barham), daughter of Charles Middleton (1726-1813), created first Baronet of Barham Court (Kent) in 1781 and first Baron Barham in 1805. GN Edwards assumed the surname Noel in 1798 on inheriting the sixth Earl of Gainborough's Rutland and Gloucestershire estates (though not the Earl's honours, which were extinguished); and he later inherited his father-in-law's baronetcy. His eldest son John Noel (1781-1866) succeeded to the estates of his mother and his father, to his mother's barony and his father's baronetcy, and was created Viscount Campden and Earl of Gainsborough in 1841.</eac-cpf:p>
+         </eac-cpf:structureOrGenealogy>
+      </_0:egXML>
+      <_0:egXML xmlns:_0="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+         <eac-cpf:structureOrGenealogy xmlns:eac-cpf="urn:isbn:1-931666-33-4">
+            <eac-cpf:p>The organogram of the<eac-cpf:span style="font-style:italic"
+                  >Ministry of Culture and Tourism</eac-cpf:span>before its incorporation with the Ministry of Education and Religious Affairs, was the following:</eac-cpf:p>
+            <eac-cpf:outline>
+               <eac-cpf:level localType="first">
+                  <eac-cpf:item>Minister of Culture and Tourism</eac-cpf:item>
+               </eac-cpf:level>
+               <eac-cpf:level localType="second">
+                  <eac-cpf:item>Deputy Minister of Culture and Tourism</eac-cpf:item>
+               </eac-cpf:level>
+               <eac-cpf:level localType="third">
+                  <eac-cpf:item>General Secretary of Tourism</eac-cpf:item>
+               </eac-cpf:level>
+               <eac-cpf:level localType="third">
+                  <eac-cpf:item>General Secretary of Sports</eac-cpf:item>
+               </eac-cpf:level>
+               <eac-cpf:level localType="third">
+                  <eac-cpf:item>General Secretary of Culture</eac-cpf:item>
+               </eac-cpf:level>
+               <eac-cpf:level localType="third">
+                  <eac-cpf:item>General Secretary for Culture and Tourism Infrastructure</eac-cpf:item>
+               </eac-cpf:level>
+            </eac-cpf:outline>
+         </eac-cpf:structureOrGenealogy>
+      </_0:egXML>
+   </div>
+</div>

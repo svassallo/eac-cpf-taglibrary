@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="schema/tagLibrary_elementDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="mandate" type="elementDocumentation">
+   <head>
+      <gi>mandate</gi>
+   </head>
+   <div type="fullName">
+      <p xml:lang="ita">Mandato</p>
+   </div>
+   <div type="summary">
+      <p xml:lang="ita">Fonte normativa o mandato per un ente (come leggi, direttive o concessioni) riguardo i suoi poteri, funzioni, responsabilità o sfera di attività.</p>
+   </div>
+   <div type="description" xml:lang="eng">
+      <p xml:lang="ita"
+            >Un elemento <gi>mandate</gi> è un elemento contenitore usato per codificare un termine di indice, attraverso l'elemento figlio <gi>term</gi>. I termini sono usati per identificare la fonte normativa o il mandato per un ente (come leggi, direttive o concessioni) riguardo i suoi poteri, funzioni, responsabilità o sfera di attività. I termini possono essere attinti da un vocabolario controllato o possono essere termini in linguaggio naturale. Le date o gli intervalli di date associati (<gi>date</gi>, <gi>dateRange</gi> o <gi>dateSet</gi>) e i luoghi (<gi>placeEntry</gi>) possono essere inclusi per circostanziare ulteriormente il significato dei termini. Un elemento <gi>descriptiveNote</gi> può essere incluso qualora sia necessaria una spiegazione testuale maggiormente estesa.</p>
+      <p xml:lang="ita"
+            >Un singolo elemento <gi>mandate</gi> può essere codificato direttamente all'interno di <gi>description</gi> In alternativa, molteplici elementi <gi>mandate</gi> possono essere raggruppati all'interno del contenitore <gi>mandates</gi>.</p>
+   </div>
+   <div type="mayContain">
+      <p>citation, date, dateRange, dateSet, descriptiveNote, placeEntry, term</p>
+   </div>
+   <div type="mayOccurWithin">
+      <p>description, mandates</p>
+   </div>
+   <div type="attributes">
+      <p xml:lang="eng">
+         <list xmlns="http://www.tei-c.org/ns/1.0" type="gloss">
+            <label>localType</label>
+            <item>Optional</item>
+            <label>xml:id</label>
+            <item>Optional</item>
+            <label>xml:lang</label>
+            <item>Optional</item>
+         </list>
+      </p>
+   </div>
+   <div type="reference">
+      <p>ISAAR (CPF) 5.2.6</p>
+   </div>
+   <div type="occurrence">
+      <div type="mandatory">
+         <p xml:lang="eng">Optional</p>
+      </div>
+      <div type="repeatable">
+         <p xml:lang="eng">Repeatable</p>
+      </div>
+   </div>
+   <div type="examples">
+      <_0:egXML xmlns:_0="http://www.tei-c.org/ns/Examples">
+         <eac-cpf:mandate xmlns:eac-cpf="urn:isbn:1-931666-33-4">
+            <eac-cpf:dateRange>
+               <eac-cpf:fromDate standardDate="1919">1919</eac-cpf:fromDate>
+               <eac-cpf:toDate standardDate="1925">1925</eac-cpf:toDate>
+            </eac-cpf:dateRange>
+            <eac-cpf:citation>Minnesota. Executive Session Laws 1919 c49</eac-cpf:citation>
+            <eac-cpf:descriptiveNote>
+               <eac-cpf:p>Board created in 1919 to receive and examine applications for bonuses from Minnesota soldiers.</eac-cpf:p>
+            </eac-cpf:descriptiveNote>
+         </eac-cpf:mandate>
+      </_0:egXML>
+   </div>
+</div>

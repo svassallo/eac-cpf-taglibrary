@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="schema/tagLibrary_elementDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="relations" type="elementDocumentation">
+   <head>
+      <gi>relations</gi>
+   </head>
+   <div type="fullName">
+      <p xml:lang="ita">Relazioni</p>
+   </div>
+   <div type="summary">
+      <p xml:lang="ita"
+            >Elemento contenitore che raggruppa una o più relazioni specifiche.</p>
+   </div>
+   <div type="description">
+      <p xml:lang="ita"
+            >Un elemento contenitore che raggruppa uno o più elementi di relazione, ognuno dei quali indica una specifica relazione. Le entità possono avere relazioni con altri enti, persone o famiglie - che possono essere espresse usando <gi>cpfRelation</gi>-, con le funzioni -che vengono espresse usando <gi>functionRelation</gi>-, con risorse come complessi archivistici, risorse bibliografiche o altri beni culturali che possono essere indicati utilizzando <gi>resourceRelation</gi>.</p>
+   </div>
+   <div type="mayContain">
+      <p>cpfRelation, functionRelation, resourceRelation</p>
+   </div>
+   <div type="mayOccurWithin">
+      <p>cpfDescription</p>
+   </div>
+   <div type="attributes">
+      <p xml:lang="eng">
+         <list xmlns="http://www.tei-c.org/ns/1.0" type="gloss">
+            <label>xml:base</label>
+            <item>Optional</item>
+            <label>xml:id</label>
+            <item>Optional</item>
+            <label>xml:lang</label>
+            <item>Optional</item>
+         </list>
+      </p>
+   </div>
+   <div type="reference">
+      <p>The general concept of providing connections from archival authority records to other related resources is stated in ISAAR(CPF) 6.0: "Archival authority records are created primarily to document the context of records creation. To make this documentation useful it is necessary to link the authority records to descriptions of records. Archival authority records can also be linked to other relevant information resources."</p>
+   </div>
+   <div type="occurrence">
+      <div type="mandatory">
+         <p xml:lang="eng">Optional</p>
+      </div>
+      <div type="repeatable">
+         <p xml:lang="eng">Non-repeatable</p>
+      </div>
+   </div>
+   <div type="examples">
+      <_0:egXML xmlns:_0="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+         <eac-cpf:relations xmlns:eac-cpf="urn:isbn:1-931666-33-4">
+            <eac-cpf:cpfRelation>[...]</eac-cpf:cpfRelation>
+            <eac-cpf:functionRelation>[...]</eac-cpf:functionRelation>
+            <eac-cpf:resourceRelation>[...]</eac-cpf:resourceRelation>
+         </eac-cpf:relations>
+      </_0:egXML>
+   </div>
+</div>

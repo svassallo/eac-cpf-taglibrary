@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="schema/tagLibrary_elementDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><div xmlns="http://www.tei-c.org/ns/1.0"
+    xml:id="authorizedForm"
+    type="elementDocumentation">
+    <head>
+        <gi>authorizedForm</gi>
+    </head>
+    <div type="fullName">
+        <p xml:lang="ita">Forma autorizzata del nome</p>
+    </div>
+    <div type="summary">
+        <p xml:lang="ita">Qualifica la denominazione contenuta in <gi>nameEntry</gi> o il gruppo di denominazioni contenute in <gi>nameEntryParallel</gi> come punto di accesso autorizzato.</p>
+    </div>
+    <div type="description">
+        <p xml:lang="ita">La denominazione di un'entità EAC-CPF, composta all'interno degli elementi <gi>nameEntry</gi> o <gi>nameEntryParallel</gi>, può essere la forma della denominazione autorizzata secondo uno specifico set di regole e convenzioni o può essere una forma alternativa o non autorizzata, secondo un differente set di regole. Questo elemento opzionale offre la possibilità di indicare uno o più set di regole e convenzioni in base ai quali la forma della denominazione espressa in <gi>nameEntry</gi> o <gi>nameEntryParallel</gi> è da considerarsi una forma autorizzata. </p>
+        <p xml:lang="ita">Lo schema eac-cpf fornisce due possibilità:</p>
+        <p xml:lang="ita">1. <gi>authorizedForm</gi> è utilizzato all'interno di <gi>nameEntry</gi> solo nei casi in cui <gi>nameEntry</gi> non sia incluso all'interno di <gi>nameEntryParallel</gi>. In questo caso esso qualifica come punto di accesso autorizzato, la forma della denominazione registrata all'interno di quel singolo elemento <gi>nameEntry</gi>.</p>
+        <p xml:lang="ita">2. <gi>authorizedForm</gi> può essere usato all'interno di <gi>nameEntryParallel</gi> per indicare che il gruppo di denominazioni parallele registrate nei distinti elementi <gi>nameEntry</gi> in <gi>nameEntryParallel</gi> sono considerate come punti di accesso autorizzati.</p>
+        <p xml:lang="ita">Il contenuto dell'elemento è un'abbreviazione selezionata da un lista definita di valori, ognuno dei quali rappresenta un set di regole nazionali, internazionali o di altre norme che regolano la costruzione delle denominazioni EAC-CPF in quegli ambiti. Le abbreviazioni espresse in <gi>authorizedForm</gi> devono essere dichiarate nell'elemento <gi>conventionDeclaration</gi> all'interno di <gi>control</gi>.</p>
+        <p xml:lang="ita">L'elemento speculare <gi>alternativeForm</gi> permette di indicare regole o convenzioni secondo cui quella denominazione sarebbe la forma alternativa. L'elemento <gi>preferredForm</gi> permette di indicare che la denominazione, così come espressa, è la forma preferita nel contesto specifico di chi descrive indipendentemente dal suo status di forma autorizzata in qualunque altro ambito.</p>
+        <p xml:lang="ita"><gi>authorizedForm</gi> può essere ripetuto nei casi in cui un singolo <gi>nameEntry</gi> o un gruppo di elementi <gi>nameEntry</gi> siano conformi a più di una regola.</p>
+    </div>
+    <div type="mayContain">
+        <p>NMTOKEN</p>
+    </div>
+    <div type="mayOccurWithin">
+        <p>nameEntry, nameEntryParallel</p>
+    </div>
+    <div type="attributes">
+        <p xml:lang="eng">
+            <list type="gloss">
+                <label>xml:id</label>
+                <item>optional</item>
+            </list>
+        </p>
+    </div>
+    <div type="occurrence">
+        <div type="mandatory">
+            <p xml:lang="eng">Optional</p>
+        </div>
+        <div type="repeatable">
+            <p xml:lang="eng">Repeatable</p>
+        </div>
+    </div>
+    <div type="examples">
+        <egXML xml:lang="eng" xmlns="http://www.tei-c.org/ns/Examples">
+            <eac-cpf:nameEntry xmlns:eac-cpf="urn:isbn:1-931666-33-4">
+                <eac-cpf:part>Brown, Bob, 1886-1959</eac-cpf:part>
+                <eac-cpf:authorizedForm>AACR2</eac-cpf:authorizedForm>
+                <eac-cpf:alternativeForm>ncafnor</eac-cpf:alternativeForm>
+            </eac-cpf:nameEntry>
+            <eac-cpf:nameEntry xmlns:eac-cpf="urn:isbn:1-931666-33-4">
+                <eac-cpf:part>Brown, Robert Carlton (1886-1959)</eac-cpf:part>
+                <eac-cpf:authorizedForm>ncafnor</eac-cpf:authorizedForm>
+                <eac-cpf:alternativeForm>AACR2</eac-cpf:alternativeForm>
+            </eac-cpf:nameEntry>
+        </egXML>
+    </div>
+</div>

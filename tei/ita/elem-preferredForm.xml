@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="schema/tagLibrary_elementDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="preferredForm" type="elementDocumentation">
+   <head>
+      <gi>preferredForm</gi>
+   </head>
+   <div type="fullName">
+      <p xml:lang="ita">Forma preferita della denominazione</p>
+   </div>
+   <div type="summary">
+      <p xml:lang="ita">Elemento usato per indicare quale delle forme parallele registrate all'interno di <gi>nameEntryParallel</gi> sia quella preferita da visualizzare in un determinato contesto.</p>
+   </div>
+   <div type="description">
+      <p xml:lang="ita"
+            >Nei casi in cui le forme parallele della denominazione siano codificate come molteplici elementi <gi>nameEntry</gi> all'interno di <gi>nameEntryParallel</gi>, è possibile scegliere un <gi>nameEntry</gi> come preferito in un determinato contesto. L'elemento <gi>preferredForm</gi> è usato solo quando <gi>nameEntry</gi> occorre all'interno di <gi>nameEntryParallel</gi>. È usato esclusivamente per distinguere la forma preferita della denominazione da visualizzare, rispetto alle altre forme parallele autorizzate  della denominazione registrate negli altri elementi <gi>nameEntry</gi>.</p>
+      <p xml:lang="ita"
+            >L'elemento <gi>preferredForm</gi> contiene un'abbreviazione di una pertinente convenzione o regola nazionale, internazionale o di altro tipo applicata da una determinata agenzia e secondo la quale la denominazione così qualificata è considerata preferita rispetto alle altre. Le abbreviazioni espresse in <gi>preferredForm</gi> devono essere dichiarate all'interno dell'elemento <gi>conventionDeclaration</gi> nella sezione <gi>control</gi>.</p>
+        <p xml:lang="ita">All'interno di <gi>nameEntryParallel</gi>, <gi>preferredForm</gi> può occorrere simultaneamente agli elementi <gi>authorizedForm</gi>. Mentre <gi>authorizedForm</gi>, quando usato all'interno di <gi>nameEntryParallel</gi>, qualifica collettivamente il gruppo di forme parallele registrate in elementi <gi>nameEntry</gi> distinti, l'elemento <gi>preferredForm</gi> è utilizzato specificatamente all'interno degli elementi <gi>nameEntry</gi> per qualificare le forme preferite della denominazione che l'agenzia responsabile sceglie di visualizzare.</p>    
+   </div>
+   <div type="mayContain">
+      <p>NMTOKEN</p>
+   </div>
+   <div type="mayOccurWithin">
+      <p>nameEntry (only when it occurs within nameEntryParallel)</p>
+   </div>
+   <div type="attributes">
+      <p xml:lang="eng">
+         <list xmlns="http://www.tei-c.org/ns/1.0" type="gloss">
+            <label>xml:id</label>
+            <item>Optional</item>
+         </list>
+      </p>
+   </div>
+   <div type="reference">
+      <p>ISAAR (CPF) 5.1.3</p>
+   </div>
+   <div type="occurrence">
+      <div type="mandatory">
+         <p xml:lang="eng">Optional</p>
+      </div>
+      <div type="repeatable">
+         <p xml:lang="eng">Repeatable</p>
+      </div>
+   </div>
+   <div type="examples">
+      <_0:egXML xmlns:_0="http://www.tei-c.org/ns/Examples">
+         <eac-cpf:nameEntryParallel xmlns:eac-cpf="urn:isbn:1-931666-33-4">
+            <_0:nameEntry xml:lang="fr" scriptCode="Latn">
+               <_0:part>Institut international des droits de l'homme</_0:part>
+               <_0:preferredForm>AFNOR_Z44-060</_0:preferredForm>
+            </_0:nameEntry>
+            <_0:nameEntry xml:lang="en" scriptCode="Latn"
+               >International institute of human rights</_0:nameEntry>
+            <_0:nameEntry xml:lang="sp" scriptCode="Latn">
+               <_0:part>Instituto internacional de derechos humanos</_0:part>
+            </_0:nameEntry>
+            <_0:authorizedForm>AFNOR_Z44-060</_0:authorizedForm>
+         </eac-cpf:nameEntryParallel>
+      </_0:egXML>
+   </div>
+</div>

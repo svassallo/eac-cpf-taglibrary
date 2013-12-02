@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../TEI/schema/tagLibrary_elementDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="xlinkArcrole" type="attributeDocumentation">
+   <head>
+      <att>xlink:arcrole</att>
+   </head>
+   <div type="fullName">
+      <p xml:lang="ita">Xlink: arcrole</p>
+   </div>
+   <div type="summary">
+      <p xml:lang="ita">URI per definire lo scopo del link.</p>
+   </div>
+   <div type="description">
+      <p xml:lang="ita">Un URI assoluto che descrive la natura della relazione tra l'entità che si sta descrivendo nel documento EAC-CPF e una risorsa remota (indicata in <gi>cpfRelation</gi>, <gi>resourceRelation</gi> o <gi>functionRelation</gi>) o la natura della relazione tra la descrizione (o un componente della descrizione) del record EAC-CPF e una risorsa remota (indicata in <gi>citation</gi>, <gi>setComponent</gi> e <gi>source</gi>). Il valore dell'attributo dovrebbe indicare il verso della relazione. Si raccomanda che la direzione della relazione sia dalla risorsa locale verso la risorsa remota.</p>
+   </div>
+   <div type="datatype" xml:lang="eng">
+      <p>string</p>
+   </div>
+</div>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../TEI/schema/tagLibrary_elementDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="standardDateTime" type="attributeDocumentation">
+   <head>
+      <att>standardDateTime</att>
+   </head>
+   <div type="fullName">
+      <p xml:lang="ita">Data e ora standardizzate</p>
+   </div>
+   <div type="summary">
+      <p xml:lang="ita">Data e ora rappresentate in una forma standardizzata per l'elaborazione elettronica.</p>
+   </div>
+   <div type="description">
+      <p xml:lang="ita"
+            >L'attributo <att>standardDateTime</att> ricorre in <gi>eventDateTime</gi>. Il valore di <att>standardDateTime</att> fornisce una forma standardizzata, al fine di essere usata nell'elaborazione elettronica, della data e dell'ora espresse nell'elemento <gi>eventDateTime</gi>. Ad esempio, incrociando i valori in <gi>eventType</gi> e in <att>standardDateTime</att>, è possibile individuare tutte i record EAC-CPF “revised” (rivisti) in un determinano giorno.</p>
+   </div>
+   <div type="datatype">
+      <p xml:lang="ita">Unione dei tipi di dato degli XML Schema, date (data completa), gYear (anno del calendario gregoriano) gYearMonth (anno e mese del calendario gregoriano) dateTime (data e ora). I casi seguenti sono tutti esempi validi: 2009-12-31, 2009, 2009-12, 2009-12-31T23:59:59</p>
+   </div>
+</div>

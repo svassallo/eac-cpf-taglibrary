@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="schema/tagLibrary_elementDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="nameEntryParallel" type="elementDocumentation">
+   <head>
+      <gi>nameEntryParallel</gi>
+   </head>
+   <div type="fullName">
+      <p xml:lang="ita">Forme parallele della denominazione</p>
+   </div>
+   <div type="summary">
+      <p xml:lang="ita"
+         >Elemento contenitore per due o più elementi <gi>nameEntry</gi> che rappresentano le forme parallele della denominazione.</p>
+   </div>
+   <div type="description">
+      <p xml:lang="ita"
+            >Un elemento contenitore utilizzato per raggruppare due o più elementi <gi>nameEntry</gi> che contengono forme parallele della denominazione della stessa entità (i.e. forme ufficiali della denominazione in lingue e scritture differenti o forme traslitterate della denominazione). Tutte queste forme devono avere lo stesso status, o di forma autorizzata o di forma alternativa. Due elementi opzionali, <gi>authorizedForm</gi> o <gi>alternativeForm</gi>, possono essere usati per dar conto con maggior precisione dello status del gruppo delle forme parallele della denominazione contenute in <gi>nameEntryParallel</gi>. Non deve essere utilizzato per abbinare forme autorizzate e non autorizzate della stessa denominazione (i.e. una forma autorizzata con un riferimento “vedi anche”). </p>
+      <p xml:lang="ita">L'elemento <gi>nameEntryParallel</gi> può contenere l'elemento <gi>useDates</gi> per indicare le date di validità del gruppo di forme parallele della denominazione.</p>
+   </div>
+   <div type="mayContain">
+      <p>alternativeForm, authorizedForm, nameEntry, useDates</p>
+   </div>
+   <div type="mayOccurWithin">
+      <p>identity</p>
+   </div>
+   <div type="attributes">
+      <p xml:lang="eng">
+         <list xmlns="http://www.tei-c.org/ns/1.0" type="gloss">
+            <label>localType</label>
+            <item>Optional</item>
+            <label>xml:id</label>
+            <item>Optional</item>
+         </list>
+      </p>
+   </div>
+   <div type="reference">
+      <p>ISAAR (CPF) 5.1.3</p>
+   </div>
+   <div type="occurrence">
+      <div type="mandatory">
+         <p xml:lang="eng">Optional</p>
+      </div>
+      <div type="repeatable">
+         <p xml:lang="eng">Repeatable</p>
+      </div>
+   </div>
+   <div type="examples">
+      <_0:egXML xmlns:_0="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+         <eac-cpf:nameEntryParallel xmlns:eac-cpf="urn:isbn:1-931666-33-4">
+            <eac-cpf:nameEntry xml:lang="fr" scriptCode="Latn">
+               <eac-cpf:part>Institut international des droits de l'homme</eac-cpf:part>
+               <eac-cpf:preferredForm>AFNOR_Z44-060</eac-cpf:preferredForm>
+            </eac-cpf:nameEntry>
+            <eac-cpf:nameEntry xml:lang="en" scriptCode="Latn">
+               <eac-cpf:part>International institute of human rights</eac-cpf:part>
+            </eac-cpf:nameEntry>
+            <eac-cpf:nameEntry xml:lang="sp" scriptCode="Latn">
+               <eac-cpf:part>Instituto internacional de derechos humanos</eac-cpf:part>
+            </eac-cpf:nameEntry>
+            <eac-cpf:authorizedForm>AFNOR_Z44-060</eac-cpf:authorizedForm>
+         </eac-cpf:nameEntryParallel>
+      </_0:egXML>
+   </div>
+</div>

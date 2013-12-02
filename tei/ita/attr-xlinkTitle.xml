@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../TEI/schema/tagLibrary_elementDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="xlinkTitle" type="attributeDocumentation">
+   <head>
+      <att>xlink:title</att>
+   </head>
+   <div type="fullName">
+      <p xml:lang="ita">Xlink: title</p>
+   </div>
+   <div type="summary">
+      <p xml:lang="ita">Informazioni che possono essere usate come una didascalia visualizzabile per la risorsa remota.</p>
+   </div>
+   <div type="description">
+      <p xml:lang="ita">Informazione che serve da didascalia visualizzabile per indicare il nome o la tipologia della risorsa remota collegata.</p>
+   </div>
+   <div type="datatype" xml:lang="eng">
+      <p>string</p>
+   </div>
+</div>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="schema/tagLibrary_elementDesc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<div xmlns="http://www.tei-c.org/ns/1.0" xml:id="place" type="elementDocumentation">
+   <head>
+      <gi>place</gi>
+   </head>
+   <div type="fullName">
+      <p xml:lang="ita">Luogo</p>
+   </div>
+   <div type="summary">
+      <p xml:lang="ita">Elemento che fornisce informazioni su un luogo o una giurisdizione dove l'entità EAC-CPF aveva sede, viveva o con cui aveva qualche altra congiunzione significativa.</p>
+   </div>
+   <div type="description">
+      <p xml:lang="ita"
+            >L'elemento <gi>place</gi> è un contenitore usato per codificare un termine di indice, attraverso l'elemento figlio <gi>placeEntry</gi>. I termini sono utilizzati per identificare luoghi o giurisdizioni dove l'entità EAC-CPF aveva sede, viveva o con cui aveva qualche altra congiunzione significativa. È previsto un elemento <gi>placeRole</gi> per specificare la natura della connessione tra il luogo e l'entità che si sta descrivendo e il suo uso è pertanto fortemente raccomandato. I termini in <gi>placeEntry</gi> e in <gi>placeRole</gi> possono essere attinti da un vocabolario controllato o possono essere termini in linguaggio naturale. Questi vocabolari controllati possono essere identificati con l'attributo <att>vocabularySource</att>. Le date o gli intervalli di date associati (<gi>date</gi>, <gi>dateRange</gi> o <gi>dateSet</gi>) possono essere inclusi per circostanziare ulteriormente il significato dei termini. Un elemento <gi>descriptiveNote</gi> può essere incluso qualora sia necessaria una spiegazione testuale maggiormente estesa. È previsto inoltre un elemento <gi>address</gi> per specificare indirizzi postali o altri tipi di indirizzi. Un elemento <gi>descriptiveNote</gi> può essere incluso per maggiori indicazioni o spiegazioni testuali della relazione tra questi valori.</p>
+      <p xml:lang="ita">Un singolo elemento <gi>place</gi> può essere codificato direttamente all'interno di <gi>description</gi> In alternativa, molteplici elementi <gi>place</gi> possono essere raggruppati all'interno del contenitore <gi>places</gi> per semplificare la loro gestione come insieme.</p>
+      <p xml:lang="ita">I luoghi possono essere in alternativa descritti discorsivamente in <gi>biogHist</gi> (ISAAR (CPF) 5.2.2 Storia biografica). L'elemento <gi>place</gi> dovrebbe essere usato ogni volta che è necessario un trattamento semantico separato delle informazioni sui luoghi.</p>
+   </div>
+   <div type="mayContain">
+      <p>address, citation, date, dateRange, dateSet, descriptiveNote, placeEntry, placeRole</p>
+   </div>
+   <div type="mayOccurWithin">
+      <p>description, places</p>
+   </div>
+   <div type="attributes">
+      <p xml:lang="eng">
+         <list xmlns="http://www.tei-c.org/ns/1.0" type="gloss">
+            <label>localType</label>
+            <item>Optional</item>
+            <label>xml:id</label>
+            <item>Optional</item>
+            <label>xml:lang</label>
+            <item>Optional</item>
+         </list>
+      </p>
+   </div>
+   <div type="reference">
+      <p>ISAAR (CPF) 5.2.3</p>
+   </div>
+   <div type="occurrence">
+      <div type="mandatory">
+         <p xml:lang="eng">Optional</p>
+      </div>
+      <div type="repeatable">
+         <p xml:lang="eng">Repeatable</p>
+      </div>
+   </div>
+   <div type="examples">
+      <_0:egXML xmlns:_0="http://www.tei-c.org/ns/Examples" xml:lang="eng">
+         <eac-cpf:place xmlns:eac-cpf="urn:isbn:1-931666-33-4">
+            <eac-cpf:placeEntry>Paris, France</eac-cpf:placeEntry>
+            <eac-cpf:placeRole>Residence</eac-cpf:placeRole>
+         </eac-cpf:place>
+      </_0:egXML>
+   </div>
+</div>
